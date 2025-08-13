@@ -46,9 +46,13 @@ The system is designed for **scalability, low computational cost, and deployabil
 - Validated **real-time detection capability** for constrained devices  
 
 ---
-
 ## Security Measures Implemented
 - AES-CCM encryption for secure communication  
 - DTLS authentication between nodes  
 - Rate limiting to mitigate DoS attacks  
-- Secure logging for forensic analysis  
+- Secure logging for forensic analysis
+
+## Simulation Screenshots
+![Network Topology View](images/network_topology.png)  
+![Timeline View](images/timeline.png)  
+![Anomaly Detection Output](images/output.png) 
