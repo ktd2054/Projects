@@ -2,7 +2,7 @@
 # IoT Network Traffic and Anomaly Detection
 This project designs, simulates, and evaluates a lightweight intrusion detection framework for Internet of Things (IoT) networks using Contiki-NG and the COOJA simulator. It focuses on real-time anomaly detection in resource-constrained environments such as smart homes, healthcare, and industrial IoT.
 
-# Key Features
+## Key Features
 
 - Simulated IoT Environment: Modeled normal, malicious, and sink nodes to represent real-world devices, attack nodes (DoS, spoofing), and monitoring gateways.
 
@@ -14,7 +14,7 @@ This project designs, simulates, and evaluates a lightweight intrusion detection
 
 - Scalability & Efficiency: Designed to operate under low computational cost and memory footprint for large IoT deployments.
 
-# Implementation Highlights
+## Implementation Highlights
 
 - Developed C-based applications for UDP clients, sink anomaly detectors, and attack nodes.
 
