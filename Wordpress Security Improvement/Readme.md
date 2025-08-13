@@ -7,7 +7,7 @@
 ![License](https://img.shields.io/badge/License-Educational-lightgrey)
 
 ## Project Overview
-This project focuses on **implementing advanced cybersecurity strategies** for the *Gray Clay Skincare* WordPress website.
+This project focuses on **implementing advanced cybersecurity strategies** for the *Skincare* WordPress website.
 
 The aim was to:
 - **Identify vulnerabilities**  
