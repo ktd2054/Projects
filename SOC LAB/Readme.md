@@ -15,3 +15,5 @@ Through this project, you will explore:
 - Threat Intelligence – Understand how to enrich alerts with threat intel feeds and IOCs.
 
 #### Project Lists
+
+- Threat Intel & IOC Hunting Project
