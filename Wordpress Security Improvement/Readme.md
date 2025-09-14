@@ -1,5 +1,5 @@
 
-# 🛡 WordPress Security Improvement Report – Gray Clay Skincare
+# 🛡 WordPress Security Improvement Report 
 
 ![WordPress](https://img.shields.io/badge/Platform-WordPress-blue)
 ![Security](https://img.shields.io/badge/Focus-Cybersecurity-red)
