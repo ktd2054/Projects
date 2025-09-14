@@ -2,7 +2,7 @@
 
 #### Welcome to the SOC Project Experience
 
-Welcome to your first step into the world of Security Operations Centers (SOC)! This project is designed to give you a hands-on, beginner-friendly experience in understanding how real SOC teams operate.
+Welcome to my first step into the world of Security Operations Centers (SOC)! This project is a hands-on, beginner-friendly experience in understanding how real SOC teams operate.
 
 Through this project, you will explore:
 
