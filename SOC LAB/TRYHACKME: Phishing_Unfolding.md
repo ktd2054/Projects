@@ -7,24 +7,6 @@ As I entered the SOC Simulator on TryHackMe, I noticed several key sections. The
   
 <img width="1898" height="837" alt="image" src="https://github.com/user-attachments/assets/287b98fb-7132-4eb1-b5bd-e3799bc0b770" />
 
-### Alert Queue
-
-When I clicked on Alert Queue in the sidebar, I was redirected to a list of all current alerts on the system. An interesting observation was that each alert displayed its type (for example, phishing or process-related) and its severity level (such as low or high), which helps determine the criticality of the alert and prioritize response efforts. 
-
-<img width="1886" height="771" alt="image" src="https://github.com/user-attachments/assets/56def3a0-ee81-4652-b4dd-840c05e9f6f9" />
-
-### SIEM
-
-### Analyst VM
-
-### Documentation
-
-### Playbooks
-
-### Case reports
-
-### Guide 
-
 # Investigation of Alerts
 
 ### Alert ID-1000: Suspicious Email From External Domain
