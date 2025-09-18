@@ -30,7 +30,7 @@ It seems powercat was used witj ngrok.io, which needs additional investigation. 
 
 <img width="1894" height="801" alt="image" src="https://github.com/user-attachments/assets/5005c237-53e6-456b-b097-bc4d8a69498c" />
 
-I found out other processes used such as net.exe, whoami.exe and so on. These events shows there was an attempt for gaining system and user information along with privilages of the user which was actually compromised. After few minutes, I can say it is a True Positive Incident. The case report is below:
+I found out other processes used such as net.exe, whoami.exe and so on. These events shows there was an attempt for gaining system and user information along with privilages of the user which was actually compromised. After few minutes, I can say it is a True Positive Incident. The case report is shown below:
 
 <img width="1456" height="881" alt="image" src="https://github.com/user-attachments/assets/e8598f9d-599f-44a9-94d6-479d8ce6b7df" />
 
