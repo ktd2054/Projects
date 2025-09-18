@@ -26,7 +26,7 @@ It looks like it is an exfiltraiton script used with Netcat & Ncat. And back to 
 
 <img width="1621" height="443" alt="image" src="https://github.com/user-attachments/assets/074a0a9f-4045-4d05-87d0-e174097a38b2" />
 
-It seems powercat was used witj ngrok.io, which needs additional investigation. Investigating other timeframes, 
+It seems powercat was used with ngrok.io, which needs additional investigation. Investigating other timeframes, 
 
 <img width="1894" height="801" alt="image" src="https://github.com/user-attachments/assets/5005c237-53e6-456b-b097-bc4d8a69498c" />
 
