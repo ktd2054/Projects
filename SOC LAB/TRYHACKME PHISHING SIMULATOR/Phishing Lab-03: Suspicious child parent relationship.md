@@ -2,7 +2,7 @@
 
 ## Suspicious child parent relationship
 
-Assiging the task, 
+Assigning the task, 
 
 <img width="1460" height="636" alt="image" src="https://github.com/user-attachments/assets/b157b01a-457d-49e0-a687-255beeb22605" />
 
