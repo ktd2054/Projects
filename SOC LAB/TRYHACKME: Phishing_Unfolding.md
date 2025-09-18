@@ -10,3 +10,5 @@ As I entered the SOC Simulator on TryHackMe, I noticed several key sections. The
 ### Alert Queue
 
 When I clicked on Alert Queue in the sidebar, I was redirected to a list of all current alerts on the system. An interesting observation was that each alert displayed its type (for example, phishing or process-related) and its severity level (such as low or high), which helps determine the criticality of the alert and prioritize response efforts. 
+
+<img width="1886" height="771" alt="image" src="https://github.com/user-attachments/assets/56def3a0-ee81-4652-b4dd-840c05e9f6f9" />
