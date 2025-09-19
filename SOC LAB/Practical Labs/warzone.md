@@ -26,7 +26,7 @@ When AttackBox (Linux VM) is fully started, we need to open Zone1.pcap file from
 
 <img width="1390" height="650" alt="image" src="https://github.com/user-attachments/assets/e4dfb707-9a12-4e6c-80cb-43f56b004dfe" />
 
-Let's look at the available logfiles first to see what kind of data artefact we could have. Type <i> count() by _path | sort -r in the search bar to find out istinct type of log files that we can rely on. (note*: to learn about the tools that we are using please follow the link unser your tools section.)
+Let's look at the available logfiles first to see what kind of data artefact we could have. Type <b><i> count() by _path | sort -r </i></b> in the search bar to find out istinct type of log files that we can rely on. (note*: to learn about the tools that we are using please follow the link unser your tools section.)
 
 
 
