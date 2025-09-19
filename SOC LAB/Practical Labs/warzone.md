@@ -26,11 +26,21 @@ When AttackBox (Linux VM) is fully started, we need to open Zone1.pcap file from
 
 <img width="1390" height="650" alt="image" src="https://github.com/user-attachments/assets/e4dfb707-9a12-4e6c-80cb-43f56b004dfe" />
 
-Let's look at the available logfiles first to see what kind of data artefact we could have. Type <b><i> count() by _path | sort -r </i></b> in the search bar to find out istinct type of log files that we can rely on. (note*: to learn about the tools that we are using please follow the link unser your tools section.)
+Let's look at the available logfiles first to see what kind of data artefact we could have. Type <b><i> count() by _path | sort -r </i></b> in the search bar to find out distinct type of log files that we can rely on. (note*: to learn about the tools that we are using please follow the link under your tools section in Task 1 introduction.)
 
+<img width="428" height="518" alt="image" src="https://github.com/user-attachments/assets/53046834-f511-4011-ae4d-db37f5a2a5a0" />
 
+Let's review the frequently communicated host before starting the investigation. 
 
+<b> Query:  cut id.orig_h, id.resp_p, id.resp_h | sort  | uniq -c | sort -r count <b>
 
+The above query will sort the data and present originating host (source ip), responding port (destination port), responding host (destination host) in a tabular format. 
+
+<img width="1017" height="460" alt="image" src="https://github.com/user-attachments/assets/2f1f9f19-86ae-442b-a429-63293e4262fb" />
+
+The result provides sufficient information that helps us where to focus. Let's look at the port numbers and availabe services before narrowing our search. 
+
+<img width="725" height="412" alt="image" src="https://github.com/user-attachments/assets/45e504cb-279e-4875-97a2-2e9e221dcd68" />
 
 
 
