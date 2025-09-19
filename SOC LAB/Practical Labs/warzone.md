@@ -24,8 +24,8 @@ First, let's click start machine button <img width="70" height="32" alt="image" 
 
 When AttackBox (Linux VM) is fully started, we need to open Zone1.pcap file from the desktop using Brim to analyse and investiagte the bad traffic. To find Brim, search using TryHackMe logo on the VM located on the top left corner <img width="80" height="32" alt="image" src="https://github.com/user-attachments/assets/ba3d785c-be9b-4e01-a1b9-b60d5343031f" />. When Brim app is opened use choose files button <img width="50" height="32" alt="image" src="https://github.com/user-attachments/assets/38dd52e8-7fd7-4577-b6c5-5f1017ec3a78" /> to select the given pcap file for further analysis. We need to wait few seconds to completely load the files.
 
+<img width="1390" height="650" alt="image" src="https://github.com/user-attachments/assets/e4dfb707-9a12-4e6c-80cb-43f56b004dfe" />
 
-<img width="1390" height="800" alt="image" src="https://github.com/user-attachments/assets/e4dfb707-9a12-4e6c-80cb-43f56b004dfe" />
 
 
 
