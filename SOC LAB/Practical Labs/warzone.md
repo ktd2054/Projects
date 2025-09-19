@@ -88,8 +88,40 @@ Q6) Do a search in VirusTotal for the domain from question 4. What was the major
 First, let's find domain. Go to Relations tab on VirusTotal and look under Passive DNS Replication section. Bingo, the highest number of repliaction is our domain. 
 Copy the domain and defang it in VirusTotal because according to Q4 it is defanged, at first I was also confused. Now, take the defanged URL to VirusTotal. Then, under relations-> communicaing files there is our answer. 
 
+=> Windows Installer
+
 <img width="1481" height="596" alt="image" src="https://github.com/user-attachments/assets/30cbd2d1-74b9-4640-9712-fdbd4c43efe0" />
 
+Q7) Inspect the web traffic for the flagged IP address; what is the user-agent in the traffic?
+
+To inspect web traffic use query: _path=="http" | cut user_agent to find the result.
+
+=> REBOL View 2.7.8.3.1
+
+<img width="648" height="695" alt="image" src="https://github.com/user-attachments/assets/f6d07aaa-c370-43be-85e9-efca556cc42f" />
+
+Q8) Retrace the attack; there were multiple IP addresses associated with this attack. What were two other IP addresses? Enter the IP addressed defanged and in numerical order. (format: IPADDR,IPADDR)
+
+Investigate by using query: _path=="http" and go to uri and user_agent column and look for something suspicious. And something is familiar in user_agent which is windows installer from Q6. 
+
+=> 185[.]10[.]68[.]235,192[.]36[.]27[.]92
+
+<img width="1511" height="458" alt="image" src="https://github.com/user-attachments/assets/75860594-d350-4f2a-be3e-826d227ceaf3" />
+
+Q9) What were the file names of the downloaded files? Enter the answer in the order to the IP addresses from the previous question. (format: file.xyz,file.xyz)
+
+One of the files can be seen in Q8 and for other one go left on same table from Q8. Bingo, we get both file names.
+
+=> filter.msi,10opd3r_load.msi
+
+<img width="1121" height="629" alt="image" src="https://github.com/user-attachments/assets/fb20ffe2-fb67-44f4-b6ff-9cb70f90687f" />
+
+Q10) Inspect the traffic for the first downloaded file from the previous question. Two files will be saved to the same directory. What is the full file path of the directory and the name of the two files? (format: C:\path\file.xyz,C:\path\file.xyz)
+
+Open pcap file in Wireshark. Search query: ip.addr == 185.1068.235 and right click on first log. Go to Follow -> TCP Stream and search C:\, yay.
+
+=> 
 
 
+Q11) Now do the same and inspect the traffic from the second downloaded file. Two files will be saved to the same directory. What is the full file path of the directory and the name of the two files? (format: C:\path\file.xyz,C:\path\file.xyz)
 
