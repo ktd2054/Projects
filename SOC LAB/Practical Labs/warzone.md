@@ -38,12 +38,25 @@ The above query will sort the data and present originating host (source ip), res
 
 <img width="1017" height="460" alt="image" src="https://github.com/user-attachments/assets/2f1f9f19-86ae-442b-a429-63293e4262fb" />
 
-The result provides sufficient information that helps us where to focus. Let's look at the port numbers and availabe services before narrowing our search. 
+The result provides sufficient information that helps us where to focus. Secodnly, Let's look at the port numbers and availabe services before narrowing our search. 
 
 <img width="725" height="412" alt="image" src="https://github.com/user-attachments/assets/45e504cb-279e-4875-97a2-2e9e221dcd68" />
 
+The above image represents the port numbers used by the number of services where http has the maximun number of records. 
 
+Q1) What was the alert signature for Malware Command and Control Activity Detected?
 
+To find an alert use query: <b> event_type == "alert" to find out the numbers of alerts and when you get the data scroll left to find the alert siganture colum for the given alert category. 
 
+=> ET Malware MirrorBlast CnC Activity M3
 
+<img width="932" height="575" alt="image" src="https://github.com/user-attachments/assets/e174d844-9073-4c6d-8f7d-65a54670fa6a" />
+
+Q2) What is the source IP address? Enter your answer in a defanged format. 
+
+It is easy to locate the source ip but to enter answer in defanged format navigate to CyberChef using the browser search. Once your page loads type Defang IP Addresses in the search bar and enter the source ip inside the input field. 
+
+=> 172[.]16[.]1[.]102
+
+<img width="1904" height="450" alt="image" src="https://github.com/user-attachments/assets/ab0e45f9-9afe-4eeb-9e7f-4d497fb270dc" />
 
