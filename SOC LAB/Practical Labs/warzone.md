@@ -54,9 +54,29 @@ To find an alert use query: <b> event_type == "alert" to find out the numbers of
 
 Q2) What is the source IP address? Enter your answer in a defanged format. 
 
-It is easy to locate the source ip but to enter answer in defanged format navigate to CyberChef using the browser search. Once your page loads type Defang IP Addresses in the search bar and enter the source ip inside the input field. 
+It is easy to locate the source ip but to enter answer in defanged format navigate to CyberChef (https://cyberchef.org/) using the browser search. Once your page loads type Defang IP Addresses in the search bar and enter the source ip inside the input field. 
 
 => 172[.]16[.]1[.]102
 
 <img width="1904" height="450" alt="image" src="https://github.com/user-attachments/assets/ab0e45f9-9afe-4eeb-9e7f-4d497fb270dc" />
+
+Q3) What IP address was the destination IP in the alert? Enter your answer in a defanged format. 
+
+Same as Q2 for destination IP.
+
+=> 169[.]239[.]128[.]11
+
+<img width="1516" height="500" alt="image" src="https://github.com/user-attachments/assets/866e64d5-f5dd-450c-89ac-c7feaf643280" />
+
+Q4) Still in VirusTotal, under Community, what threat group is attributed to this IP address?
+
+Go to VirusTotal website for ip investigation and type the destination ip address under search section and press enter. Here you go, it is suspicious. 
+Now, click community for finding the threat group.
+
+=> TA505
+
+<img width="1412" height="799" alt="image" src="https://github.com/user-attachments/assets/d23ded4d-f336-48c9-b43c-cb43b1010d25" />
+
+
+
 
