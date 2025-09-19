@@ -1,4 +1,4 @@
-#TryHackMe: Warzone 1 Write-Up
+# TryHackMe: Warzone 1 Write-Up
 
 <img width="686" height="321" alt="image" src="https://github.com/user-attachments/assets/d4af53b8-9bde-49c0-a781-2f0afe62d1f3" />
 
