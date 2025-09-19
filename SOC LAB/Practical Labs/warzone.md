@@ -22,7 +22,7 @@ If you don't see a virtual machine load then click the Show Split View button.
 
 First, let's click start machine button <img width="70" height="32" alt="image" src="https://github.com/user-attachments/assets/b8ae34d0-d2da-4d67-8c52-c6438f45cddb" /> to start the target machine. Once, you get the IP Address of target machine, you can use Attack Box shown in upper left side of the room.
 
-When AttackBox (Linux VM) is fully started, we need to open Zone1.pcap file from the desktop using Brim to analyse and investiagte the bad traffic. To find Brim Search using TryHackMe logo on VM located on the top left corner <img width="115" height="34" alt="image" src="https://github.com/user-attachments/assets/ba3d785c-be9b-4e01-a1b9-b60d5343031f" />.
+When AttackBox (Linux VM) is fully started, we need to open Zone1.pcap file from the desktop using Brim to analyse and investiagte the bad traffic. To find Brim, search using TryHackMe logo on the VM located on the top left corner <img width="80" height="32" alt="image" src="https://github.com/user-attachments/assets/ba3d785c-be9b-4e01-a1b9-b60d5343031f" />. After Brim application is opened use select files button from the 
 
 
 
