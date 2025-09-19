@@ -75,7 +75,20 @@ Now, click community for finding the threat group.
 
 => TA505
 
-<img width="1412" height="799" alt="image" src="https://github.com/user-attachments/assets/d23ded4d-f336-48c9-b43c-cb43b1010d25" />
+<img width="1412" height="600" alt="image" src="https://github.com/user-attachments/assets/d23ded4d-f336-48c9-b43c-cb43b1010d25" />
+
+Q5) What is the malware family?
+
+We can find it on same screenshot from Q4.
+
+=> MirrorBlast
+
+Q6) Do a search in VirusTotal for the domain from question 4. What was the majority file type listed under Communicating Files
+
+First, let's find domain. Go to Relations tab on VirusTotal and look under Passive DNS Replication section. Bingo, the highest number of repliaction is our domain. 
+Copy the domain and defang it in VirusTotal because according to Q4 it is defanged, at first I was also confused. Now, take the defanged URL to VirusTotal. Then, under relations-> communicaing files there is our answer. 
+
+<img width="1481" height="596" alt="image" src="https://github.com/user-attachments/assets/30cbd2d1-74b9-4640-9712-fdbd4c43efe0" />
 
 
 
