@@ -1,4 +1,4 @@
-# TryHackMe: Warzone 2 Write-up
+<img width="1742" height="913" alt="image" src="https://github.com/user-attachments/assets/0b3485f2-ae4b-490a-a7db-feb4fbd15237" /># TryHackMe: Warzone 2 Write-up
 
 Welcome to the sequel of warzone. The same tools will be used. 
 
@@ -61,7 +61,7 @@ Copy the host and uri name and paste it to cyberchef.com to get defanged url.
 
 => awh93dhkylps5ulnq-be[.]com/czwih/fxla[.]php?l=gap1[.]cab
 
-Q5) 
+Q5) What is the name of the payload within the cab file? 
 
 Right click the row with our url from brim and go to open details. A sidebar on right will pop-up and we can find filename gap1.cab. It means we need sha1 hash for analysing. 
 
@@ -72,3 +72,49 @@ Navigate to virustotal.com and paste the hash. Bingo, its dll file.
 <img width="1742" height="913" alt="image" src="https://github.com/user-attachments/assets/6f25eff2-0086-479f-b5a7-45b0586a97fe" />
 
 => draw.dll
+
+Q6) What is the user-agent associated with this network traffic?
+
+Go back to Brim, and scroll left for user_agent column.
+
+<img width="768" height="576" alt="image" src="https://github.com/user-attachments/assets/707305a5-e130-41f6-aaf6-e5efec94abcc" />
+
+=> Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/8.0; .NET4.0C; .NET4.0E)
+
+Q7) What other domains do you see in the network traffic that are labelled as malicious by VirusTotal? Enter the domains defanged and in alphabetical order. (format: domain[.]zzz,domain[.]zzz)
+
+Go to virustotal.com and look for other domains.
+
+<img width="924" height="257" alt="image" src="https://github.com/user-attachments/assets/5e5f4de2-b1b3-4c57-9afd-e6e582f03b05" />
+
+=> a-zcorner[.]com, knockoutlights[.]com
+
+Q8) There are IP addresses flagged as Not Suspicious Traffic. What are the IP addresses? Enter your answer in numerical order and defanged. (format: IPADDR,IPADDR)
+
+Go to Brim, search event_type=="alert" | cut src_ip, dest_ip, alert.category | sort for better limited view. 
+
+<img width="743" height="550" alt="image" src="https://github.com/user-attachments/assets/109b0aca-ab42-40a9-9a8b-f1dfc5cecf6a" />
+
+Have a look under alert.category for Not Suspicious Traffic, we will find two uniq ip addresses. Go to CyberChef,
+
+<img width="1188" height="605" alt="image" src="https://github.com/user-attachments/assets/d0b9018a-944f-4278-9610-7658effd79e3" />
+
+=> 64[.]225[.]65[.]166, 142[.]93[.]211[.]176
+
+Q9) For the first IP address flagged as Not Suspicious Traffic. According to VirusTotal, there are several domains associated with this one IP address that was flagged as malicious. What were the domains you spotted in the network traffic associated with this IP address? Enter your answer in a defanged format. Enter your answer in alphabetical order, in a defanged format. (format: domain[.]zzz,domain[.]zzz,etc)
+
+Get the first IP and paste it in virustotal.com, under realtions tab there are three domains with highest number of detections. 
+Defang the IPs, 
+
+=> toptocsicambar[.]xyz, safebanktest[.]top,ulcertification[.]xyz
+
+Q10) Now for the second IP marked as Not Suspicious Traffic. What was the domain you spotted in the network traffic associated with this IP address? Enter your answer in a defanged format. (format: domain[.]zzz)
+
+When I went to virustotal.com, I found 3 domains but all of them were wrong when I submitted. Then i went back to Brim and paste the IP in search bar and investigated until I found one domain, and defanged it.
+
+<img width="788" height="390" alt="image" src="https://github.com/user-attachments/assets/1ac89613-e73d-4eca-a167-58506da1bdfb" />
+
+=> 2partscow[.]top
+
+<img width="787" height="391" alt="image" src="https://github.com/user-attachments/assets/cf06609b-09cc-4a0b-a87d-1bfac2e79626" />
+
