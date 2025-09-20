@@ -38,7 +38,7 @@ The above query will sort the data and present originating host (source ip), res
 
 <img width="1017" height="460" alt="image" src="https://github.com/user-attachments/assets/2f1f9f19-86ae-442b-a429-63293e4262fb" />
 
-The result provides sufficient information that helps us where to focus. Secodnly, Let's look at the port numbers and availabe services before narrowing our search. 
+The result provides sufficient information that helps us where to focus. Secondly, Let's look at the port numbers and availabe services before narrowing our search. 
 
 <img width="725" height="412" alt="image" src="https://github.com/user-attachments/assets/45e504cb-279e-4875-97a2-2e9e221dcd68" />
 
