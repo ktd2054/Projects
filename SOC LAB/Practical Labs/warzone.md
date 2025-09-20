@@ -118,10 +118,16 @@ One of the files can be seen in Q8 and for other one go left on same table from 
 
 Q10) Inspect the traffic for the first downloaded file from the previous question. Two files will be saved to the same directory. What is the full file path of the directory and the name of the two files? (format: C:\path\file.xyz,C:\path\file.xyz)
 
-Open pcap file in Wireshark. Search query: ip.addr == 185.1068.235 and right click on first log. Go to Follow -> TCP Stream and search C:\, yay.
+Open pcap file in Wireshark. Search query: ip.addr == 185.10.68.235 and right click on first log. 
+Go to Follow -> TCP Stream and search C:\, yay. (Note: When the file is opened check whether file name is correct or not.)
 
-=> 
+=> C:\ProgramData\001\arab.bin,C:\ProgramData\001\Action1_arab.exe
 
 
 Q11) Now do the same and inspect the traffic from the second downloaded file. Two files will be saved to the same directory. What is the full file path of the directory and the name of the two files? (format: C:\path\file.xyz,C:\path\file.xyz)
 
+Search 192.36.27.92 and follow steps like Q10.
+
+=> C:\ProgramData\Local\Google\rebol-view-278-3-1.exe,C:\ProgramData\Local\Google\exemple.rb
+
+Thank you. Enjoy your shift. 
