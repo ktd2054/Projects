@@ -1,4 +1,4 @@
-<img width="1742" height="913" alt="image" src="https://github.com/user-attachments/assets/0b3485f2-ae4b-490a-a7db-feb4fbd15237" /># TryHackMe: Warzone 2 Write-up
+# TryHackMe: Warzone 2 Write-up
 
 Welcome to the sequel of warzone. The same tools will be used. 
 
