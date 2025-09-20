@@ -126,7 +126,7 @@ Go to Follow -> TCP Stream and search C:\, yay. (Note: When the file is opened c
 
 Q11) Now do the same and inspect the traffic from the second downloaded file. Two files will be saved to the same directory. What is the full file path of the directory and the name of the two files? (format: C:\path\file.xyz,C:\path\file.xyz)
 
-Search 192.36.27.92 and follow steps like Q10.
+Search query: ip.addr==192.36.27.92 and follow steps like Q10.
 
 => C:\ProgramData\Local\Google\rebol-view-278-3-1.exe,C:\ProgramData\Local\Google\exemple.rb
 
