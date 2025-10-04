@@ -1,4 +1,4 @@
 # Practical Skills
 
-Welcome to my hacking practice performed on tryhackme.com!
+Welcome to my hands-on practice performed on tryhackme.com!
 
