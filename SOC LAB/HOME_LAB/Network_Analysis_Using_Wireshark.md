@@ -41,7 +41,7 @@
 
 Results: 
 
-- infected Host IP: 10.6.1.133
+- infected Host IP: 10.6.13.133
 - DNS server (destination) IP: 10.6.13.3
 - domain: massfriction.com
 
@@ -55,6 +55,26 @@ Conclusion
 
 <img width="706" height="133" alt="image" src="https://github.com/user-attachments/assets/b8ddc598-9d3d-4bc0-aec7-af67db564f16" />
 
+#### Act 3: Indicator of Compromise
+
+- finding C2 External IP by using domain _massfriction.com_, and the filter query is:
+
+dns.qry.name contains "massfriction.com" and dns.flags.response == 1
+
+<img width="1860" height="516" alt="image" src="https://github.com/user-attachments/assets/ac3550ec-f84f-4387-a7da-3900f44a3a63" />
+
+Result:
+
+<img width="445" height="100" alt="image" src="https://github.com/user-attachments/assets/09ff45d0-227c-47d7-a345-2bd49004ca2a" />
+
+#### Act 4: Correlating TLS Traffic
+
+- using query ip.addr == 10.6.13.133 and ip.addr == 10.6.13.3 and tls to check the relation between host and C2 IP for generation of
+  huge TLS traffic
+
+  
+
+#### Case Report
 
 
 
