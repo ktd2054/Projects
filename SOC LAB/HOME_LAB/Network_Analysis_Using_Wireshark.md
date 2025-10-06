@@ -49,7 +49,7 @@ Now, checking the base domain _massfriction.com_ using virustotal.com and _urlsc
 
 <img width="1621" height="949" alt="image" src="https://github.com/user-attachments/assets/a7965710-827f-4bf4-ae62-1dd8793884ca" />
 
-Aha! It is malicious. Additionally, the subdomain SDA_win-DQlAwfvjxq4 shows the classic sign of Domain Generation Algorithm used by malware to register its C2 server.
+Aha! It is malicious. 
 
 Conclusion
 
