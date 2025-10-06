@@ -43,9 +43,19 @@ Results:
 
 - infected Host IP: 10.6.1.133
 - DNS server (destination) IP: 10.6.13.3
-- Suspicious domain: WAPD.massfriction.com and SDA_win-DQlAwfvjxq4.massfriction.com
+- domain: massfriction.com
 
-Now, checking the base url _massfriction.com_ using virustotal.com and _urlscan.io_ to check whether it is malicious or not.
+Now, checking the base domain _massfriction.com_ using virustotal.com and _urlscan.io_ to check whether it is malicious or not.
 
 <img width="1621" height="949" alt="image" src="https://github.com/user-attachments/assets/a7965710-827f-4bf4-ae62-1dd8793884ca" />
+
+Aha! It is malicious. Additionally, the subdomain SDA_win-DQlAwfvjxq4 shows the classic sign of Domain Generation Algorithm used by malware to register its C2 server.
+
+Conclusion
+
+<img width="706" height="133" alt="image" src="https://github.com/user-attachments/assets/b8ddc598-9d3d-4bc0-aec7-af67db564f16" />
+
+
+
+
 
