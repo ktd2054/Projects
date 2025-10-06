@@ -2,7 +2,7 @@
 
 <img width="760" height="164" alt="image" src="https://github.com/user-attachments/assets/db966d14-0345-4a8c-a748-3d42b9ff11a3" />
 
-## TAsk 1: Introduction
+## Task 1: Introduction
 
 ﻿Introduction
 
@@ -69,3 +69,52 @@ Look at the parameter after endpoint. It's q.
 Find feroxbuster line to look for a file tried to download by an attacker.
 
 => /ftp
+
+## Task 3: Stolen Data
+
+Analyze the provided log files.
+
+Look carefully at:
+
+- The attacker's movement on the website
+- Response codes
+- Abnormal query strings
+
+### Answer the questions below
+
+1) What section of the website did the attacker use to scrape user email addresses?
+
+Let's look for product review section. Yay, It's product review, after analysing some lines, there are something different user reviews.
+<img width="1881" height="948" alt="image" src="https://github.com/user-attachments/assets/ea5cca14-c225-4610-8b5c-1e5f03db550b" />
+
+=> product reviews
+
+2) Was their brute-force attack successful? If so, what is the timestamp of the successful login? (Yay/Nay, 11/Apr/2021:09:xx:xx +0000)
+
+Search hydra in file and look for error code by scrolling down, as I found 200 in one row which means success.
+
+=> Yay, 11/Apr/2021:09:16:31 +0000
+
+3) What user information was the attacker able to retrieve from the endpoint vulnerable to SQL injection?
+
+Search sqlmap in access.log file and look for any credintials tag such as email and password.
+
+=> email, password
+
+4) What files did they try to download from the vulnerable endpoint? (endpoint from the previous task, question #5)
+
+Search ftp on file, you will notice a filename.
+
+=> coupons_2013.md.bak,www-data.bak 
+
+5) What service and account name were used to retrieve files from the previous question? (service, username)
+
+Go to vsftpd.log to check ftp files. It can be seen a succcessful download of a file. 
+
+=> ftp, anonymous
+
+6) What service and username were used to gain shell access to the server? (service, username)
+
+Go to auth.log file and file most unsuccessful login attempts. We will find the user and service.
+
+=> ssh, www-data
