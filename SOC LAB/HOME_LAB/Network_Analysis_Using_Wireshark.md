@@ -33,3 +33,19 @@
   session-based activity where DEC/RPC has lowest related to Windows Services. Likewise, the TLS, DNS, HTTP and SMB protocols indicates
   data exfiltration, beaconing and file access/transfer malicious activities.
 
+#### Act 2: Identifying the infected host and C2 server
+
+- filtering the data using _dns_ query to identify host, c2 domain and suspicious query patterns.
+  
+<img width="1913" height="926" alt="image" src="https://github.com/user-attachments/assets/580f82fe-5305-4082-bcb2-1e5bf4b06d92" />
+
+Results: 
+
+- infected Host IP: 10.6.1.133
+- DNS server (destination) IP: 10.6.13.3
+- Suspicious domain: WAPD.massfriction.com and SDA_win-DQlAwfvjxq4.massfriction.com
+
+Now, checking the base url _massfriction.com_ using virustotal.com and _urlscan.io_ to check whether it is malicious or not.
+
+<img width="1621" height="949" alt="image" src="https://github.com/user-attachments/assets/a7965710-827f-4bf4-ae62-1dd8793884ca" />
+
