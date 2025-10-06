@@ -26,3 +26,46 @@ Answer => I Am Ready!
 
 ## Task 2: Reconnaissance
 
+Analyze the provided log files.
+
+Look carefully at:
+
+- What tools the attacker used
+- What endpoints the attacker tried to exploit
+- What endpoints were vulnerable
+
+### Answer the questions below
+
+1) What tools did the attacker use? (Order by the occurrence in the log)
+
+Let's open the downloaded files at once.
+
+<img width="1693" height="508" alt="image" src="https://github.com/user-attachments/assets/07aa72d9-f96c-460e-b9d7-ceb0b9e7dab5" />
+
+Look at acess.log file for tools that is being used.
+
+=> nmap, hydra, sqlmap, curl, feroxbuster
+
+2) What endpoint was vulnerable to a brute-force attack?
+
+One of the tools used is Hydra, so it will be used for brute-force attack. Use ctrl + F to find the hydra keyword. Look for the endpoint.
+
+=> rest/user/login 
+
+3) What endpoint was vulnerable to SQL injection?
+
+SQLMap was used for probable sql injection, search in the file and find the endpoint.
+
+=> /rest/products/search
+
+4) What parameter was used for the SQL injection?
+
+Look at the parameter after endpoint. It's q.
+
+=> q
+
+5) What endpoint did the attacker try to use to retrieve files? (Include the /)
+
+Find feroxbuster line to look for a file tried to download by an attacker.
+
+=> /ftp
