@@ -72,10 +72,19 @@ Result:
 - using query ip.addr == 10.6.13.133 and ip.addr == 10.6.13.3 and tls to check the relation between host and C2 IP for generation of
   huge TLS traffic
 
-  
+  <img width="1270" height="594" alt="image" src="https://github.com/user-attachments/assets/49f7603f-3a7f-4f89-ba4c-3aed87812b4c" />
 
-#### Case Report
+The blank result shows there is no relation between the host and c2.
 
+re-triaging with query: ip.src=10.6.13.133 and tls
+
+<img width="1585" height="493" alt="image" src="https://github.com/user-attachments/assets/7740d7a9-e196-4927-88bc-02e900f4b411" />
+
+The packets 119 and 158 have Application Data which is send by host which confirms data exfilteration is occuring. 
+
+### Case Report
+
+<img width="1297" height="186" alt="image" src="https://github.com/user-attachments/assets/11ab57a1-cb34-4c90-9b93-ac6d4d278c18" />
 
 
 
