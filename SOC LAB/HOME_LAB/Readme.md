@@ -11,4 +11,4 @@ I will start by building my own virtual cyber lab, then dive into real-world sce
 
 - Safely analyze malware to uncover its secrets.
 
-By completing and documenting these projects, I will learn and create a portfolio.
+
