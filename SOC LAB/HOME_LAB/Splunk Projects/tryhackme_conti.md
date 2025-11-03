@@ -4,10 +4,36 @@
 
 # Task 1 SITREP
 
+Some employees from your company reported that they can’t log into Outlook. The Exchange system admin also reported that he can’t log in to the Exchange Admin Center. After initial triage, they discovered some weird readme files settled on the Exchange server.  
+
+Below is a copy of the ransomware note.
+
+<img width="1234" height="406" alt="image" src="https://github.com/user-attachments/assets/5c5ffaa2-99a9-4912-9f52-704a3cfffc97" />
+
+Warning: Do NOT attempt to visit and/or interact with any URLs displayed in the ransom note. 
+
+Read the latest on the Conti ransomware here. 
+
+Connect to OpenVPN or use the AttackBox to access the attached Splunk instance. 
+
+Splunk Interface Credentials:
+
+Username: bellybear
+
+Password: password!!!
+
+Splunk URL: http://MACHINE_IP:8000
+
+Special thanks to Bohan Zhang for this challenge.
+
+Start the attached virtual machine.
 
 # Task 2 Exchanged Server Compromised
 
 Below are the error messages that the Exchange admin and employees see when they try to access anything related to Exchange or Outlook.
+
+<img width="1415" height="674" alt="image" src="https://github.com/user-attachments/assets/20c0fe5c-4e48-4f59-8f5a-a21b87458d2a" />
+
 
 Task: You are assigned to investigate this situation. Use Splunk to answer the questions below regarding the Conti ransomware. 
 
