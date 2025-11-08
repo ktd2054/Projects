@@ -1,4 +1,4 @@
-Welcome to Projects !
+Welcome to Cyber Security Journey Projects !
 
 I have done few mini projects to gain hands-on experience for becoming a SOC analyst.
 
@@ -9,6 +9,6 @@ I have done few mini projects to gain hands-on experience for becoming a SOC ana
 
 ### SOC HANDS_ON
 
-- SOC LAB 
+- SOC LAB
 
 
