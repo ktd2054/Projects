@@ -16,16 +16,16 @@ Phase 4: Enhanced functionality to save log data into a text file (report.txt).
 
 Phase 5: Implemented file reading capability to load quiz questions and answers from an external file (quiz.txt).
 
-Testing
+### Testing
 
 - Ten test cases were designed to validate each phase, focusing on question handling, multiple attempts, logging, saving to files, and reading questions from external files.
 - All test cases passed successfully, confirming the correctness and reliability of the program.
 
-Bugs & Limitations
+### Bugs & Limitations
 
 - No known bugs were found during testing.
 
-Limitations:
+### Limitations:
 
 - Depends on correct file paths and formatting.
 
