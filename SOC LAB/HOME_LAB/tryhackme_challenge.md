@@ -38,13 +38,40 @@ I will be searching index="network_logs" in splunk. It found 2,485 events.
 
 <img width="1036" height="400" alt="image" src="https://github.com/user-attachments/assets/0dec6723-495e-4667-8156-95b7cfcf2391" />
 
-search index="network_logs" sourcetype=firewall_logs action=BLOCK | stats count by src_ip
-
-<img width="1033" height="397" alt="image" src="https://github.com/user-attachments/assets/7a8d78af-ae17-41ba-8091-f424ca97d053" />
+search index="network_logs" sourcetype=firewall_logs and click on src_ip on left sidebar
 
 IP with highest count is the one that perfroms most reconnaossance.
 
 =>> 203.0.113.45
+
+Q2) In the firewall log, Which internal host was targeted by scans?
+
+ Easy Method, search index="network_logs" sourcetype=firewall_logs 
+
+- go to dst_ip on side bar and the result will be the IP with highest count.
+
+<img width="1010" height="726" alt="image" src="https://github.com/user-attachments/assets/4186e3a5-38b8-49d0-bf50-39a3cc7db273" />
+
+=>> 10.0.0.20
+
+Q3) Which username was targeted in VPN logs?
+
+Search index="network_logs" sourcetype=vpn_logs and go to username on left side bar.
+
+=>> 
+
+Q4) What internal IP was assigned after successful VPN login?
+
+
+
+
+
+
+
+
+
+
+
 
 
 
