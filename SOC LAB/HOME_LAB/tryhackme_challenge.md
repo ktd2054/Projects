@@ -34,9 +34,17 @@ I will be searching index="network_logs" in splunk. It found 2,485 events.
 
 <img width="1042" height="329" alt="image" src="https://github.com/user-attachments/assets/f00225d5-27ec-4bb4-ba41-264faed20b3e" />
 
+- click on sourcetype on left sidebar where 3 types of logs are listed and will click on firewall_logs, there are 1,284 events.
 
+<img width="1036" height="400" alt="image" src="https://github.com/user-attachments/assets/0dec6723-495e-4667-8156-95b7cfcf2391" />
 
+search index="network_logs" sourcetype=firewall_logs action=BLOCK | stats count by src_ip
 
+<img width="1033" height="397" alt="image" src="https://github.com/user-attachments/assets/7a8d78af-ae17-41ba-8091-f424ca97d053" />
+
+IP with highest count is the one that perfroms most reconnaossance.
+
+=>> 203.0.113.45
 
 
 
