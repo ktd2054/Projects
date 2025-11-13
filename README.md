@@ -16,7 +16,7 @@ A CRUD-capable desktop/mobile Java quiz application with question management, sc
 ## SOC lab projects
 
 - Home Lab (real-life VMs & malware bazaar)
-Built an on-prem SOC lab with multiple VMs (Windows/Linux), logging (syslog/ELK/Splunk), and safe malware samples from malware-bazaar for detection practice. Focus: detection pipelines, playbook testing, containment. Tools/skills: VM orchestration, Splunk/ELK, sandboxing, network monitoring. Constructed a multi-VM SOC lab to develop detection rules and practice incident response using real samples.
+Built an on-prem SOC lab with multiple VMs (Windows/Linux), logging (syslog/ELK/Splunk), and safe malware samples from malware-bazaar for detection practice. Focus: playbook testing, containment. Tools/skills: VMs, Splunk/ELK, network monitoring. Constructed a multi-VM SOC lab to develop detection rules and practice incident response using real samples.
 
 - Practical Labs (TryHackMe-based SOC exercises)
 Completed hands-on TryHackMe rooms focused on SOC tasks — log analysis, threat hunting, network forensics, and incident triage. Focus: applying L1/L2 analyst workflows and writing reports. Tools/skills: Splunk/ELK queries, PCAP analysis, Windows forensics basics. Executed practical SOC scenarios (triage, hunting, forensics) using TryHackMe labs to build analyst skillset.
