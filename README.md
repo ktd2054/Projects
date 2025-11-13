@@ -4,7 +4,7 @@ I have done few mini projects to gain hands-on experience.
 
 ## College mini projects
 
-<Justify>
+ 
 - IoT Network Traffic & Anomaly Detection (Cooja)
   
 Built a simulated IoT network in the Cooja emulator, captured traffic and implemented simple anomaly detection. Focus: identifying unusual device behaviour (scanning, traffic spikes). Tools/skills: Contiki/Cooja, pcap analysis. Simulated IoT environment and developed anomaly-detection rules to flag malicious traffic patterns.
@@ -31,4 +31,3 @@ Completed hands-on TryHackMe rooms focused on SOC tasks — log analysis, threat
   
 Built/configured a phishing simulation environment to test user awareness and incident detection — created realistic templates, tracked click rates, and integrated simulated alerts for SOC ingestion. Focus: social-engineering testing and alert validation. Tools/skills: phishing frameworks/simulators, SMTP/web templates, alerting pipelines. Deployed a phishing simulator to measure user susceptibility and validate alerting/response processes.
 
-</Justify>
