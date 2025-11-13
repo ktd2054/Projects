@@ -8,7 +8,7 @@ I have done few mini projects to gain hands-on experience.
 Built a simulated IoT network in the Cooja emulator, captured traffic and implemented simple anomaly detection. Focus: identifying unusual device behaviour (scanning, traffic spikes). Tools/skills: Contiki/Cooja, pcap analysis. Simulated IoT environment and developed anomaly-detection rules to flag malicious traffic patterns.
 
 - WordPress Security Improvement (XSS, hardening, SQLi)
-Audited a WordPress site for common web vulnerabilities, implemented fixes (input sanitisation, CSP, secure config, least-privilege DB user), and tested against XSS/SQLi. Tools/skills: Burp/OWASP ZAP, WP hardening best-practices, PHP sanitisation, secure plugins/config. Resume line: Performed vulnerability remediation and hardening for WordPress, reducing common web risks (XSS/SQLi).
+Audited a WordPress site for common web vulnerabilities, implemented fixes (input sanitisation, CSP, secure config, least-privilege DB user), and tested against XSS/SQLi. Tools/skills: Burp/OWASP ZAP, WP hardening best-practices, PHP sanitisation, secure plugins/config. Performed vulnerability remediation and hardening for WordPress, reducing common web risks (XSS/SQLi).
 
 - Java Quiz App (Simple quiz app)
 A CRUD-capable desktop/mobile Java quiz application with question management, scoring, and basic persistence (files/DB). Focus: UI, input validation and program flow. Tools/skills: Java, JDBC or file I/O. Developed a Java quiz application with question management and scoring logic.
