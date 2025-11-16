@@ -76,13 +76,13 @@ In the filter: <i> arp </i> - the following image shows all the request and repl
 
 <img width="1384" height="501" alt="image" src="https://github.com/user-attachments/assets/37a46f48-1f8e-48ec-9eb9-74196d3a0ebe" />
 
-<u>- ARP Requests </u>
+#### ARP Requests
 
 typing <i> arp.opcode ==1 </i> in search bar will show all the ARP requests captured from different hosts.
 
 <img width="1390" height="528" alt="image" src="https://github.com/user-attachments/assets/ea06c098-6ff2-46e9-881b-97cf2eed246c" />
 
-<u>- ARP Response </u>
+#### ARP Response
 
 In Arp Spoofing, an attacker sends a fake ARP replies to a viction known Forged ARP Poisioning. Forged ARP poisoning typically uses unsolicited is-at replies (gratuitous/unasked replies).
 use filter <i> arp.opcode == 2 </i>
@@ -91,7 +91,7 @@ use filter <i> arp.opcode == 2 </i>
 
 This image displays all the ARP responses from various hosts. Examining these closely reveals multiple responses, including gratuitous (A device sends an ARP reply without anyone requesting it) ones. Legitimate replies typically correspond to recent "who-has" requests. Suspicious activity is indicated by numerous replies with no visible requests or repeated advertisements of the same IP address from a suspicious MAC address.
 
-<u> - Gratuitous ARP Responses </u>
+#### Gratuitous ARP Responses
 
 A suspicious host sends many unsolicited (gratuitous) ARP replies, especially to multiple destinations. Repeated gratuitous ARPs can indicate an attacker maintaining their poison state.
 We can also filter on the gratuitous packets, as shown below:
@@ -100,7 +100,47 @@ We can also filter on the gratuitous packets, as shown below:
 
 <img width="1397" height="519" alt="image" src="https://github.com/user-attachments/assets/6d2ca159-9596-4e1c-a390-1acb85d227d0" />
 
+#### ARP traffic associated with the Gateway
 
+We have the information about the IP and the MAC address associated with the gateway. Let's apply the following filter to examine the ARP traffic associated with the gateway, as shown below:
+
+Filter: arp && arp.src.proto_ipv4 == 192.168.10.1 && eth.src == 02:aa:bb:cc:00:01
+
+<img width="1383" height="381" alt="image" src="https://github.com/user-attachments/assets/dd3c1476-b3c9-4b34-b77a-120bc7574fba" />
+
+Looking at the output, we can see only the ARP responses. Let's now narrow down on the Gateway IP to further probe about the MAC addresses associated with the IP, using the following filter as shown below:
+
+Filter: arp.opcode == 2 && arp.src.proto_ipv4 == 192.168.10.1
+
+<img width="1370" height="538" alt="image" src="https://github.com/user-attachments/assets/12fa2f8d-ca81-44ae-abe7-c02cac2a63c8" />
+
+This output looks interesting. Looking closely, we see some ARP replies pointing the Gateway's IP to the suspicious MAC address. The frequency of these ARP replies indicates that this is indeed an ARP spoofing. Let's confirm by applying another filter, as shown below:
+
+Filter: arp.opcode ==2 && _ws.col.info contains "192.168.10.1 is at"
+
+<img width="1361" height="542" alt="image" src="https://github.com/user-attachments/assets/6e28401d-4eb3-46da-8fe1-5976b5d0e264" />
+
+
+This filter has two parts. The first part focuses on the ARP responses and the second part _ws.col.info contains "192.168.10.1 is at" filters on the content shown in the information column. This filters out the ARP responses, which are pointing the Gateway's IP 192.168.10.1 to the MAC address. But if we look closely, we can see that the attacker uses ARP spoofing to tell the IP to its MAC address. We can also use this filter arp.opcode == 2 && arp.src.proto_ipv4 == 192.168.10.1, which shows the same result.
+
+#### Examining the suspicious MAC address
+Now that we have identified ARP spoofing in action, let's narrow down on the attacker's MAC address that has associated itself with the Gateway's IP address, using the following filter:
+
+Filter: arp.opcode == 2 && arp.src.proto_ipv4 == 192.168.10.1 && eth.src == 02:fe[REDACTED]
+
+<img width="937" height="356" alt="image" src="https://github.com/user-attachments/assets/29a739d2-a90b-4404-858d-4f4252cc7131" />
+
+The result clearly confirms that the attacker spoofs ARP.
+
+#### Check for Duplicate IP-to-MAC Mappings
+
+The last thing we can check and confirm is by filtering on the Check for duplicate MAC address mappings to a single IP address. 
+
+Filter: arp.duplicate-address-detected || arp.duplicate-address-frame
+
+<img width="1374" height="560" alt="image" src="https://github.com/user-attachments/assets/aa886a7e-a362-4dad-b9a0-98e2c5d7028b" />
+
+This result indicates that the attacker successfully performed ARP spoofing and positioned himself between the victim and the gateway. Let's move on to the next task and examine how the attacker could perform a DNS spoofing attack to get the redirection.
 
 
 
