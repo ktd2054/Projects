@@ -1,4 +1,4 @@
-<img width="1381" height="539" alt="image" src="https://github.com/user-attachments/assets/cd1b66e1-443e-4a09-a76b-60fb008d6714" /># Writeup: TryHackMe - Detecting MITM Attacks
+# Writeup: TryHackMe - Detecting MITM Attacks
 
 IBM states "A man-in-the-middle (MITM) attack is a cyberattack in which a hacker steals sensitive information by eavesdropping on communications between two online targets such as a user and a web application."
 (<link> https://www.ibm.com/think/topics/man-in-the-middle</link>)
