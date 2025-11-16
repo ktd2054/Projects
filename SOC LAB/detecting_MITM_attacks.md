@@ -76,13 +76,13 @@ In the filter: <i> arp </i> - the following image shows all the request and repl
 
 <img width="1384" height="501" alt="image" src="https://github.com/user-attachments/assets/37a46f48-1f8e-48ec-9eb9-74196d3a0ebe" />
 
-<u> ARP Requests </u>
+<u>- ARP Requests </u>
 
 typing <i> arp.opcode ==1 </i> in search bar will show all the ARP requests captured from different hosts.
 
 <img width="1390" height="528" alt="image" src="https://github.com/user-attachments/assets/ea06c098-6ff2-46e9-881b-97cf2eed246c" />
 
-<u> ARP Response </u>
+<u>- ARP Response </u>
 
 In Arp Spoofing, an attacker sends a fake ARP replies to a viction known Forged ARP Poisioning. Forged ARP poisoning typically uses unsolicited is-at replies (gratuitous/unasked replies).
 use filter <i> arp.opcode == 2 </i>
@@ -91,7 +91,7 @@ use filter <i> arp.opcode == 2 </i>
 
 This image displays all the ARP responses from various hosts. Examining these closely reveals multiple responses, including gratuitous (A device sends an ARP reply without anyone requesting it) ones. Legitimate replies typically correspond to recent "who-has" requests. Suspicious activity is indicated by numerous replies with no visible requests or repeated advertisements of the same IP address from a suspicious MAC address.
 
-<u> Gratuitous ARP Responses </u>
+<u> - Gratuitous ARP Responses </u>
 
 A suspicious host sends many unsolicited (gratuitous) ARP replies, especially to multiple destinations. Repeated gratuitous ARPs can indicate an attacker maintaining their poison state.
 We can also filter on the gratuitous packets, as shown below:
