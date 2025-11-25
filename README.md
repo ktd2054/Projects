@@ -25,9 +25,9 @@ Built an on-prem SOC lab with multiple VMs (Windows/Linux), logging (syslog/ELK/
 
 - Practical Labs (TryHackMe-based SOC exercises)
  
-Completed hands-on TryHackMe rooms focused on SOC tasks — log analysis, threat hunting, network forensics, and incident triage. Focus: applying L1/L2 analyst workflows and writing reports. Tools/skills: Splunk/ELK queries, PCAP analysis, Windows forensics basics. Executed practical SOC scenarios (triage, hunting, forensics) using TryHackMe labs to build analyst skillset.
+Completed hands-on TryHackMe rooms focused on SOC tasks: log analysis, threat hunting, network forensics, and incident triage. Focus: applying L1/L2 analyst workflows and writing reports. Tools/skills: Splunk/ELK queries, PCAP analysis, Windows forensics basics. Executed practical SOC scenarios (triage, hunting, forensics) using TryHackMe labs to build analyst skillset.
 
 - TryHackMe Simulator (Phishing simulator)
   
-Built/configured a phishing simulation environment to test user awareness and incident detection — created realistic templates, tracked click rates, and integrated simulated alerts for SOC ingestion. Focus: social-engineering testing and alert validation. Tools/skills: phishing frameworks/simulators, SMTP/web templates, alerting pipelines. Deployed a phishing simulator to measure user susceptibility and validate alerting/response processes.
+Built/configured a phishing simulation environment to test user awareness and incident detection; created realistic templates, tracked click rates, and integrated simulated alerts for SOC ingestion. Focus: social-engineering testing and alert validation. Tools/skills: phishing frameworks/simulators, SMTP/web templates, alerting pipelines. Deployed a phishing simulator to measure user susceptibility and validate alerting/response processes.
 
