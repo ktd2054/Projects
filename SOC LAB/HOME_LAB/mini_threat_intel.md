@@ -1,1 +1,0 @@
-# Mini Threat Intel 
