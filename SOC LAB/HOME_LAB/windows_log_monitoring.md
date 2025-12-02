@@ -1,3 +1,11 @@
 # Windows Log Monitoring
 
-Tools: Virtual Box, Windows 10, Ubuntu, Kali linux
+### Summary: 
+
+### Objective: 
+
+# Lab Setup
+
+## Tools: Virtual Box, Windows 10, Ubuntu, Kali linux, ...
+
+
