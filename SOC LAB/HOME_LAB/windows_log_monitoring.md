@@ -68,7 +68,7 @@ Windows -> Run -> gpedit.msc -> Computer Configuration -> Windows Settings -> Se
 - Download Sysmon from Microsoft Learn  https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
 - Download a config file (SwiftOnSecurity) https://github.com/SwiftOnSecurity/sysmon-config
 
-![Security](https://img.shields.io/badge/Focus-EncounteredProblem-red)
+![Security](https://img.shields.io/badge/Error-EncounteredProblem-red)
 
 
 
