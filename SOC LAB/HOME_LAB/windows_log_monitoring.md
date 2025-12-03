@@ -15,7 +15,7 @@
 
 ## Tools: VMWare, Windows 10, Kali linux, Sysmon, Event Viewer ...
 
-### Step 1: Preparing Windows as target by creating a user and enabling RDP
+### Step 1: Preparing Windows as target by creating a new user and enabling RDP
 
 - Why to create a new user and enable RDP?
 
@@ -70,6 +70,13 @@ Windows -> Run -> gpedit.msc -> Computer Configuration -> Windows Settings -> Se
 
 ![Security](https://img.shields.io/badge/Error-EncounteredProblem-red)
 
+Sysmon cannot find a config file due to typo error.
+
+<img width="883" height="426" alt="image" src="https://github.com/user-attachments/assets/42bc79cf-29ae-4165-b993-de5c0fcc94ac" />
+
+Sucessuflly installed.
+
+<img width="653" height="297" alt="image" src="https://github.com/user-attachments/assets/11332558-2faa-48c9-8d81-e2ccf0667cf9" />
 
 
 
