@@ -14,7 +14,4 @@ This folder contains three distinct directories.
 
 
 
-TOOLS FOR PENTESTING
-
-- Aperi Solve
 
