@@ -2,7 +2,7 @@
 
 I have done few mini projects to gain hands-on experience.
 
-## College mini projects
+## mini projects
 
  
 - IoT Network Traffic & Anomaly Detection (Cooja)
