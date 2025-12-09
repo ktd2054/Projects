@@ -36,9 +36,7 @@ a) Host-Centric
 
  ### Why SIEM?
 
-<img width="733" height="729" alt="image" src="https://github.com/user-attachments/assets/74cd349f-b718-4ebd-b76f-480ab54caa5b" />
 
- 
 #### Features
 
 - centarlized log collection from endpoints, servers, firewalls
