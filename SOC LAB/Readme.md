@@ -1,11 +1,14 @@
 Welcome !!! 
 
-This folder contains three distinct directories.
+This SOC Lab repository is organised into three key sections:
 
-- HOME_LAB : This folder conatins the projects done in my virtual environment.
-- Practical Labs: This diretory has few hands-on gained using tryhackme.com rooms.
-- TRYHACKME PHISHING SIMULATOR: It contains few solved alerts using SOC Simulator on tryhackme.com
+- HOME_LAB: Windows/Linux security projects and monitoring tasks performed in my virtual environment.
 
+- Practical Labs: Hands-on exercises completed through TryHackMe to reinforce SOC fundamentals.
+
+- Phishing Simulator: Analysis of SOC alerts generated from TryHackMe’s Phishing Simulation scenarios.
+
+Together, these folders showcase my practical experience across log analysis, threat detection, and incident investigation.
 
 
 
