@@ -2,7 +2,12 @@
 
 # TRYHACKME: PHISHING UNFOLDING LAB
 
-Welcome to Phishing Lab Simulator experience using tryhackme.com
+The TRYHACKME PHISHING SIMULATOR directory contains completed SOC alert investigations generated from TryHackMe’s phishing simulation environment. 
+
+These analyses cover email threat identification, malicious indicators, user-behaviour patterns, and alert triage workflows.
+
+Each write-up demonstrates practical SOC investigation skills, from reviewing suspicious emails to validating indicators and determining the appropriate response actions.
+
 
 ### Dashboard
 
