@@ -1,4 +1,4 @@
-# Practical Skills
+# Practical Labs
 
 The Practical Labs directory contains hands-on cybersecurity exercises completed through the TryHackMe SOC Level 1 pathway. 
 
