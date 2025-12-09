@@ -119,8 +119,13 @@ Continue in forwarder with command _./bin/splunk forward-server MACHINE_IP:9997_
 
 I was using ./splunk add forward-server MACHINE_IP:9997 instead of actual ip such as 192.168.1.0:9997. Problem solved.
 
+### Lets utlize logger utility
 
+- lets create a test log
 
+<img width="652" height="256" alt="image" src="https://github.com/user-attachments/assets/b6677bff-28be-4d58-958f-ea6f7f5fb4e4" />
+
+- go to splunk  -> search index=""
 
 
 ## References
