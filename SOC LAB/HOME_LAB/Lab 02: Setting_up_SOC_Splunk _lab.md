@@ -131,6 +131,21 @@ I was using ./splunk add forward-server MACHINE_IP:9997 instead of actual ip suc
 
 Done log ingestion.
 
+## Splunk: Deployment on Windows
+
+- download .msi files from splunk enterprise including universal forwarder
+- first, click the splunk installer until we reach credentials tab for splunk -> enter or set credintials
+- click next and install
+
+- before installing forwarder we have to configure receiving for better connection to send logs
+  
+  <img width="911" height="602" alt="image" src="https://github.com/user-attachments/assets/ba37a735-7e86-4949-bcc4-ad0cc624d468" />
+
+- set port number 9997 like before we did on kali installer process
+- now, for installing forwarder click or open .msi file downloaded
+- set hostname or IP to 127.0.0.1 and port no. 8089
+- click next and install
+- after installation completes go to splunk -> settings -> forwarder management tab
 
 ## References
 
