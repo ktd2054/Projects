@@ -106,7 +106,7 @@ b) universal forwarder
 It will store all the receiving data.
 
 - setting indexes -> click new index
-- index name: linux_host
+- index name: linux_host and linux_host01
 - click save
 
 Continue in forwarder with command _./bin/splunk forward-server MACHINE_IP:9997_ which will lsiten to port 9997.
