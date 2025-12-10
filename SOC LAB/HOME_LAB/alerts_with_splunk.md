@@ -1,4 +1,4 @@
-# Alerts With Splunk
+# Alerts With Splunk using TryHackMe
 
 ### Linux Host
 
@@ -9,4 +9,8 @@
   
 - search for both successful and failed login attempts, as well as events related to invalid users
 
-index="linux-alert" sourcetype="linux_secure" 10.10.242.248 | search "Accepted password for" OR "Failed password for" OR "Invalid user" | sort + _time
+[ index="linux-alert" sourcetype="linux_secure" ipaddr | 
+search "Accepted password for" OR "Failed password for" OR "Invalid user" | sort + _time ]
+
+
+
