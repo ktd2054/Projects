@@ -2,7 +2,7 @@
 
 
 ## Creating Reports and Dashboard in Splunk
----------------------------------------------------------------------------------------------------------------------
+
 ### Create a report from the network-server logs host that lists the ports used in network connections and their count.
 ### What is the highest number of times any port is used in network connections?
 
