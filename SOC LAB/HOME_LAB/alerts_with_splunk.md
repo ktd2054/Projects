@@ -9,8 +9,11 @@
   
 - search for both successful and failed login attempts, as well as events related to invalid users
 
-[ index="linux-alert" sourcetype="linux_secure" ipaddr | 
-search "Accepted password for" OR "Failed password for" OR "Invalid user" | sort + _time ]
+command:
 
+index="linux-alert" sourcetype="linux_secure" ipaddr | 
+search "Accepted password for" OR "Failed password for" OR "Invalid user" | sort + _time 
+
+<img width="1153" height="670" alt="image" src="https://github.com/user-attachments/assets/ad61af55-bc29-4ef2-8c3b-5a977be4f8bb" />
 
 
