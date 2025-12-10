@@ -125,7 +125,11 @@ I was using ./splunk add forward-server MACHINE_IP:9997 instead of actual ip suc
 
 <img width="652" height="256" alt="image" src="https://github.com/user-attachments/assets/b6677bff-28be-4d58-958f-ea6f7f5fb4e4" />
 
-- go to splunk  -> search index=""
+- go to splunk  -> search
+
+<img width="1912" height="813" alt="image" src="https://github.com/user-attachments/assets/3a1cda1b-cccc-4b7f-96fc-5dcfa2cdcbb6" />
+
+Done log ingestion.
 
 
 ## References
