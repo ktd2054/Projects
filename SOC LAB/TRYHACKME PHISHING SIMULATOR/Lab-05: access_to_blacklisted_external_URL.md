@@ -1,6 +1,6 @@
 # Severity: High
 
-<img width="737" height="482" alt="image" src="https://github.com/user-attachments/assets/b0ea6201-934c-4b7f-a1d1-deae8708db4c" />
+<img width="937" height="682" alt="image" src="https://github.com/user-attachments/assets/b0ea6201-934c-4b7f-a1d1-deae8708db4c" />
 
 ### Key Points:
 
