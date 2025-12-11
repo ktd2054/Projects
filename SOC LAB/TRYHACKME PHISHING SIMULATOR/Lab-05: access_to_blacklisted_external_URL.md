@@ -21,7 +21,7 @@
   
 - Source IP is clean.
 
-  <img width="856" height="540" alt="image" src="https://github.com/user-attachments/assets/7fdd67ad-40d9-475d-a921-6b1c7d40d456" />
+<img width="856" height="540" alt="image" src="https://github.com/user-attachments/assets/7fdd67ad-40d9-475d-a921-6b1c7d40d456" />
 
 - Destination IP is Malicious
   
