@@ -84,7 +84,7 @@ Now, i used that .exe file to searh fro logs: index=win_eventlogs HostName="*HR*
 
 ## The suspicious file downloaded from the C2 server contained malicious content with the pattern THM{..........}; what is that pattern?
 
-==> got to the full link https://controlc.com/548ab556
+==> got to the full link https://controlc.com/e4d11035
 
 ## What is the URL that the infected host connected to?
 
