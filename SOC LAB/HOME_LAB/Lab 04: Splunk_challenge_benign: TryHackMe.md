@@ -88,7 +88,7 @@ Now, i used that .exe file to searh fro logs: index=win_eventlogs HostName="*HR*
 
 ## What is the URL that the infected host connected to?
 
-==>https://controlc.com/548ab556
+==>https://controlc.com/e4d11035
 
 
 
