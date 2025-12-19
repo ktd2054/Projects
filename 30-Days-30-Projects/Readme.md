@@ -69,5 +69,5 @@ The purpose of this repository is to **prove hands-on ability**, not just theory
 ```text
 📁 Day-01-Project/
  ├── README.md        # Project overview
- ├── Steps.md         # Investigation steps, Ananlysis and Conclusion
+ ├── Steps.md         # Investigation steps, Analysis and Conclusion
  
