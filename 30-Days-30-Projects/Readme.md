@@ -69,7 +69,5 @@ The purpose of this repository is to **prove hands-on ability**, not just theory
 ```text
 📁 Day-01-Project/
  ├── README.md        # Project overview
- ├── Steps.md         # Investigation steps
- ├── Findings.md      # Analysis & conclusions
- ├── Report.md        # SOC-style incident report
- └── Screenshots/     # Evidence & screenshots
+ ├── Steps.md         # Investigation steps, Ananlysis and Conclusion
+ 
