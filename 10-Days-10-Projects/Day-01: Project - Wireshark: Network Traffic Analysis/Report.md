@@ -21,7 +21,7 @@ This investigation analyzes a real-world packet capture (PCAP) obtained from mal
 
 Screenshot:
 
- ![Image](/ProtocolHierarchy.md)
+ ![Image](/ProtocolHierarchy.png)
 
 ### Step 2: Traffic Relationship Analysis
 
