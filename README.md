@@ -1,33 +1,163 @@
-# Welcome to Projects !
+<div align="center">
 
-I have done few mini projects to gain hands-on experience.
+# 🚀 Projects  
+### 🧠 Hands-On Security, SOC & Technical Projects
 
-## mini projects
+![Hands-On](https://img.shields.io/badge/Experience-Hands--On-orange?style=for-the-badge)
+![SOC](https://img.shields.io/badge/Focus-SOC%20%26%20Security-blue?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed%20%2B%20Ongoing-green?style=for-the-badge)
 
- 
-- IoT Network Traffic & Anomaly Detection (Cooja)
-  
-Built a simulated IoT network in the Cooja emulator, captured traffic and implemented simple anomaly detection. Focus: identifying unusual device behaviour (scanning, traffic spikes). Tools/skills: Contiki/Cooja, pcap analysis. Simulated IoT environment and developed anomaly-detection rules to flag malicious traffic patterns.
+</div>
 
-- WordPress Security Improvement (XSS, hardening, SQLi)
-  
-Audited a WordPress site for common web vulnerabilities, implemented fixes (input sanitisation, CSP, secure config, least-privilege DB user), and tested against XSS/SQLi. Tools/skills: Burp/OWASP ZAP, WP hardening best-practices, PHP sanitisation, secure plugins/config. Performed vulnerability remediation and hardening for WordPress, reducing common web risks (XSS/SQLi).
+---
 
-- Java Quiz App (Simple quiz app)
-  
-A CRUD-capable desktop/mobile Java quiz application with question management, scoring, and basic persistence (files/DB). Focus: UI, input validation and program flow. Tools/skills: Java, JDBC or file I/O. Developed a Java quiz application with question management and scoring logic.
+## 👋 Overview
 
-## SOC lab projects
+This section highlights **mini projects and SOC lab projects** completed to gain **practical, real-world experience**.
 
-- Home Lab (real-life VMs & malware bazaar)
+Each project focuses on **hands-on implementation**, **problem-solving**, and **analysis**, closely aligned with what **SOC analysts, security analysts, and technical analysts** do in real environments.
 
-Built an on-prem SOC lab with multiple VMs (Windows/Linux), logging (syslog/ELK/Splunk), and safe malware samples from malware-bazaar for detection practice. Focus: playbook testing, containment. Tools/skills: VMs, Splunk/ELK, network monitoring. Constructed a multi-VM SOC lab to develop detection rules and practice incident response using real samples.
+---
 
-- Practical Labs (TryHackMe-based SOC exercises)
- 
-Completed hands-on TryHackMe rooms focused on SOC tasks: log analysis, threat hunting, network forensics, and incident triage. Focus: applying L1/L2 analyst workflows and writing reports. Tools/skills: Splunk/ELK queries, PCAP analysis, Windows forensics basics. Executed practical SOC scenarios (triage, hunting, forensics) using TryHackMe labs to build analyst skillset.
+## 🧩 Mini Projects
 
-- TryHackMe Simulator (Phishing simulator)
-  
-Built/configured a phishing simulation environment to test user awareness and incident detection; created realistic templates, tracked click rates, and integrated simulated alerts for SOC ingestion. Focus: social-engineering testing and alert validation. Tools/skills: phishing frameworks/simulators, SMTP/web templates, alerting pipelines. Deployed a phishing simulator to measure user susceptibility and validate alerting/response processes.
+### 🌐 IoT Network Traffic & Anomaly Detection (Cooja)
 
+**Description**  
+Built a simulated IoT network using the **Cooja emulator**, captured network traffic, and implemented **basic anomaly-detection logic** to identify suspicious behaviour such as scanning activity and traffic spikes.
+
+**Focus Areas**
+- Identifying abnormal device behaviour
+- Understanding IoT network traffic patterns
+
+**Tools & Skills**
+- Contiki / Cooja  
+- PCAP analysis  
+- Basic anomaly-detection logic  
+
+**Outcome**  
+Simulated an IoT environment and developed detection rules to flag **potentially malicious traffic patterns**.
+
+---
+
+### 🛠️ WordPress Security Improvement (XSS, Hardening, SQLi)
+
+**Description**  
+Performed a security audit of a WordPress site to identify common web vulnerabilities and applied **hardening and remediation techniques**.
+
+**Focus Areas**
+- Cross-Site Scripting (XSS)
+- SQL Injection (SQLi)
+- Secure configuration and access control
+
+**Tools & Skills**
+- Burp Suite / OWASP ZAP  
+- WordPress hardening best practices  
+- PHP input sanitisation  
+- Content Security Policy (CSP)  
+
+**Outcome**  
+Reduced common web risks by implementing **secure configurations, least-privilege access**, and validating protections against XSS and SQLi.
+
+---
+
+### ☕ Java Quiz Application
+
+**Description**  
+Developed a **CRUD-capable Java quiz application** with question management, scoring logic, and basic persistence.
+
+**Focus Areas**
+- Application flow and logic
+- Input validation
+- Data persistence
+
+**Tools & Skills**
+- Java  
+- File I/O or JDBC  
+- Basic UI concepts  
+
+**Outcome**  
+Built a functional quiz application demonstrating **core programming, validation, and data-handling skills**.
+
+---
+
+## 🛡️ SOC Lab Projects
+
+### 🧪 Home SOC Lab (Real-Life VMs & Malware Bazaar)
+
+**Description**  
+Built a **multi-VM SOC home lab** using Windows and Linux systems, integrated centralized logging, and safely analysed malware samples from **MalwareBazaar**.
+
+**Focus Areas**
+- Detection engineering
+- Incident response practice
+- Containment workflows
+
+**Tools & Skills**
+- Virtual Machines (Windows / Linux)  
+- Splunk / ELK Stack  
+- Network monitoring  
+- Malware analysis (safe handling)  
+
+**Outcome**  
+Constructed a realistic SOC environment to develop **detection rules** and practice **incident handling using real-world samples**.
+
+---
+
+### 🔍 Practical SOC Labs (TryHackMe)
+
+**Description**  
+Completed hands-on **TryHackMe SOC-focused labs** covering real analyst workflows.
+
+**Focus Areas**
+- Log analysis
+- Threat hunting
+- Network forensics
+- Incident triage
+
+**Tools & Skills**
+- Splunk / ELK queries  
+- PCAP analysis  
+- Windows forensics fundamentals  
+
+**Outcome**  
+Executed SOC Level 1 / Level 2 workflows and produced investigation findings and reports.
+
+---
+
+### 📧 Phishing Simulator (TryHackMe / Lab-Based)
+
+**Description**  
+Built and configured a **phishing simulation environment** to test user awareness and SOC alerting.
+
+**Focus Areas**
+- Social engineering detection
+- Alert validation
+- User susceptibility measurement
+
+**Tools & Skills**
+- Phishing frameworks / simulators  
+- SMTP & web templates  
+- Alerting and logging pipelines  
+
+**Outcome**  
+Deployed a phishing simulator to **measure click rates**, validate alerting mechanisms, and practice response workflows.
+
+---
+
+## 🎯 Career Relevance
+
+These projects directly support readiness for roles such as:
+
+- 🛡️ SOC Analyst (L1 / Junior)
+- 🔐 Cybersecurity Analyst
+- 🧑‍💻 Technical Analyst
+- 🎧 Security / IT Support with SOC exposure
+
+---
+
+<div align="center">
+
+⭐ **All projects focus on practical skills, investigation mindset, and real-world relevance.** ⭐  
+
+</div>
