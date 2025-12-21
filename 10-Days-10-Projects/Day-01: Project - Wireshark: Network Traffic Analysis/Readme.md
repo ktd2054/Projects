@@ -5,7 +5,7 @@
 This project demonstrates **real-world network traffic analysis** using **Wireshark**, a core skill for **SOC Level 1 / Junior SOC Analyst roles**.  
 The investigation is performed **safely using PCAP files only**, simulating how analysts examine malicious traffic in a real Security Operations Center (SOC).
 
-The objective is to **analyze suspicious network activity**, identify **Indicators of Compromise (IOCs)**, and document findings in a **SOC-style investigation report** — without executing any malware.
+The objective is to **analyze suspicious network activity**, identify **Indicators of Compromise (IOCs)**, and document findings in a **SOC-style investigation report** ; without executing any malware.
 
 ---
 
@@ -22,7 +22,7 @@ By completing this project, I demonstrate the ability to:
 - ✔ Think and investigate like a **SOC analyst**
 - ✔ Write a **clear SOC-style incident report**
 
-> ❗ No malware execution is involved — this is **pure network forensics**.
+> ❗ No malware execution is involved, this is **pure network forensics**.
 
 ---
 
@@ -90,7 +90,7 @@ This project is designed to be **employer-ready** and showcases my ability to:
 
 **Detect • Analyze • Explain • Report**
 
-— the exact workflow used by professional SOC teams.
+
 
 ---
 
