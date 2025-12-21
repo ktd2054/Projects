@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛡️ 30 Days – 30 Security Projects  
+# 🛡️ 10 Days – 10 Security Projects  
 ### 🚀 SOC Analyst (Level 1 / Junior) Hands-On Portfolio  
 
 ![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Portfolio-blue?style=for-the-badge)
@@ -14,9 +14,9 @@
 
 ## 👋 Welcome
 
-Welcome to my **30 Days – 30 Security Projects** challenge.
+Welcome to my **10 Days – 10 Security Projects** challenge.
 
-This repository contains **30 real-world cybersecurity projects completed in 30 days**, focused on **entry-level / junior SOC analyst skills**.
+This repository contains **10 real-world cybersecurity projects completed in 10 days**, focused on **entry-level / junior SOC analyst skills**.
 
 The purpose of this repository is to **prove hands-on ability**, not just theory.
 
