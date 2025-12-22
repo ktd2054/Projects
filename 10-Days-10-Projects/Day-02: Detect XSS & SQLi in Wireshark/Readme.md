@@ -13,7 +13,7 @@ All attacks were conducted **safely in a controlled lab environment** against a 
 
 ---
 
-## 🎯 Skills Demonstrated (What Employers Care About)
+## 🎯 Skills Demonstrated 
 - Network traffic analysis using Wireshark
 - Detection of SQL Injection and XSS payloads
 - Understanding HTTP request/response behavior
