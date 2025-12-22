@@ -1,4 +1,4 @@
-# 🔍 Day 2 – Web Attack Detection (XSS & SQL Injection) using Wireshark
+# 🔍 Web Attack Detection (XSS & SQL Injection) using Wireshark
 
 ## 📌 Project Overview
 This project demonstrates my ability to **detect and analyze real-world web attacks** such as **SQL Injection (SQLi)** and **Cross-Site Scripting (XSS)** at the **network traffic level** using **Wireshark**.
