@@ -5,7 +5,7 @@
 
 ![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Portfolio-blue?style=for-the-badge)
 ![SOC](https://img.shields.io/badge/SOC-Level%201-green?style=for-the-badge)
-![Projects](https://img.shields.io/badge/Projects-30-orange?style=for-the-badge)
+![Projects](https://img.shields.io/badge/Projects-10-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow?style=for-the-badge)
 
 </div>
