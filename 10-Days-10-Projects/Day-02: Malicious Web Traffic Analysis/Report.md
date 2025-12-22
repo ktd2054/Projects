@@ -1,6 +1,9 @@
 <img width="1786" height="575" alt="image" src="https://github.com/user-attachments/assets/f0fbbb8c-28d7-40c4-99a8-2703ea4d80c1" />
 
 ## Summary
+
+This investigation analyzed a real-world packet capture to determine whether a Windows host was compromised through malicious web activity. Network traffic analysis revealed access to a deceptive website impersonating Google Authenticator, followed by suspicious outbound connections from the affected host. Indicators of compromise were extracted using Wireshark, and the activity was assessed to determine the scope and impact of the infection.
+
 ## Investigation Process
 
 ### What is the IP address of the infected Windows client?
@@ -55,16 +58,16 @@
 
 <img width="1793" height="794" alt="image" src="https://github.com/user-attachments/assets/ad2bbf5f-2e5b-4b7a-b0e2-e7e95d128718" />
 
---------------
-IPs found
---------------
-5.252.153.241
--------------
-45.125.66.32
--------------
+
+- IPs found
+  5.252.153.241, 45.125.66.32
+
 
 ## Conclusion
 
+The packet capture analysis confirms that the Windows host (10.1.17.215) was exposed to malicious web activity originating from a fake Google Authenticator website (authenticatoor[.]org). Network evidence shows the host resolving and accessing the deceptive domain, followed by repeated outbound communications to external IP addresses consistent with command-and-control (C2) behavior.
+While the exact user account name could not be conclusively identified due to encrypted authentication traffic, DHCP and Kerberos activity allowed identification of the affected system hostname. The observed beaconing patterns over HTTP, HTTPS, DNS, and TLS strongly suggest post-infection communication with malicious infrastructure.
+Overall, this investigation demonstrates how PCAP-based analysis can effectively identify web-based infections, extract indicators of compromise, and confirm malicious activity, while also highlighting the limitations of network-only visibility without endpoint or identity telemetry.
 
 
 ## References
