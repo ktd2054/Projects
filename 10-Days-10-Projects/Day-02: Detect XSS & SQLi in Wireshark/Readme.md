@@ -28,7 +28,7 @@ All attacks were conducted **safely in a controlled lab environment** against a 
 | Component | Details |
 |---------|--------|
 | Attacker | Kali Linux |
-| Target | DVWA (Damn Vulnerable Web Application) – Docker |
+| Target | DVWA (Damn Vulnerable Web Application)|
 | Network | NAT / Host-only |
 | Protocol | HTTP |
 | Capture Tool | Wireshark |
@@ -41,7 +41,7 @@ All attacks were conducted **safely in a controlled lab environment** against a 
 
 ## 🛠 Tools Used
 - **Wireshark** – Network packet capture and analysis
-- **DVWA (Docker)** – Vulnerable web application
+- **DVWA** – Vulnerable web application
 - **Kali Linux** – Attacker machine
 - **Browser** – Generating web traffic
 
