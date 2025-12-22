@@ -69,11 +69,10 @@ IPs found
 
 ## References
 
-----------------------------
+
 | Topic/Files | Links/URLs
-----------------------------
-| PCAP | https://www.malware-traffic-analysis.net/2025/01/22/index.html
-----------------------------
+--------------|--------------
+| PCAP        | https://www.malware-traffic-analysis.net/2025/01/22/index.html
 | Wireshark tutorials | https://wiki.wireshark.org/CaptureFilters
 
 
