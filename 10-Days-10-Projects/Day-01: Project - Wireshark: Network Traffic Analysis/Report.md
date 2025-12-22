@@ -31,6 +31,9 @@ Screenshot:
 - focus was IPs, Internal -> External Communications 
 - several long duration sessions with moderate packet counts
 
+Screenshot:
+![Image](ProtocolHierarchy.png)
+
 #### Observed Results
 
 - The primary internal host 10.6.13.133 was idenitifed communicating with many external IPs
@@ -44,6 +47,12 @@ Screenshot:
 
 - Traffic associated with internal IP 10.6.13.133 was examined
 - A TCP stream was isolated suing tcp.stream==69 to find and display isolated packets that belongs to TCP conversation.
+
+Screenshot:
+![Image](followtcpstream.png)
+Screenshot:
+![Image](tcpfilter.png)
+
 
 #### Observed Results
 
@@ -59,6 +68,13 @@ Screenshot:
 - dns queries from suspected host were isolated
 - only dns response queries (intent) and query names were examined
 
+Screenshot:
+![Image](dns1.png)
+Screenshot:
+![Image](dns2.png)
+Screenshot:
+![Image](dns3.png)
+
 #### Observation Results
 
 - normal user browsing
@@ -66,6 +82,8 @@ Screenshot:
 - microsoft authentication & updates
 - one dns-resolved domain/URL was found malicious confirmed via virus total
 
+Screenshot:
+![Image](urlcheck.png)
 
 ### Step 5: IOC Extractation
 
