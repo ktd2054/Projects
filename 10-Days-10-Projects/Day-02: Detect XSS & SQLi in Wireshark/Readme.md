@@ -43,7 +43,6 @@ All attacks were conducted **safely in a controlled lab environment** against a 
 - **Wireshark** – Network packet capture and analysis
 - **DVWA (Docker)** – Vulnerable web application
 - **Kali Linux** – Attacker machine
-- **Docker** – Application deployment
 - **Browser** – Generating web traffic
 
 
