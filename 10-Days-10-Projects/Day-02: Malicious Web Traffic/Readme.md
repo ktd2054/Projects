@@ -7,7 +7,7 @@ The analysis was performed **safely** using publicly available PCAP files withou
 
 ---
 
-## 🎯 Objectives (What Employers Care About)
+## 🎯 Objectives
 Through this project, I demonstrate my ability to:
 
 - Analyze **real-world malicious web traffic** using Wireshark
