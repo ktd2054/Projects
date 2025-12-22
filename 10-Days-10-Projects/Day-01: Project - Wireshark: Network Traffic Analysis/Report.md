@@ -32,7 +32,7 @@ Screenshot:
 - several long duration sessions with moderate packet counts
 
 Screenshot:
-![Image](ProtocolHierarchy.png)
+![Image](Conversations.png)
 
 #### Observed Results
 
@@ -83,7 +83,7 @@ Screenshot:
 - one dns-resolved domain/URL was found malicious confirmed via virus total
 
 Screenshot:
-![Image](urlcheck.png)
+![Image](malicious.png)
 
 ### Step 5: IOC Extractation
 
