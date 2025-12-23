@@ -74,7 +74,7 @@ Sysmon cannot find a config file due to typo error.
 
 <img width="883" height="426" alt="image" src="https://github.com/user-attachments/assets/42bc79cf-29ae-4165-b993-de5c0fcc94ac" />
 
-Sucessufully installed.
+Sucessfully installed.
 
 <img width="653" height="297" alt="image" src="https://github.com/user-attachments/assets/11332558-2faa-48c9-8d81-e2ccf0667cf9" />
 
