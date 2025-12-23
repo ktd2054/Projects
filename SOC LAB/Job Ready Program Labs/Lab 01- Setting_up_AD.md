@@ -47,4 +47,9 @@
 
 <img width="1500" height="645" alt="image" src="https://github.com/user-attachments/assets/e44844dc-68d9-4ac1-843c-36a6be5dc2ff" />
 
-  
+
+### Setting up windows server 2019 as destop experience to connect in same domain as our windows server 2022
+
+- everything is same process but while assigning IP address the DNS should be as same as IP of windows server 2022
+
+
