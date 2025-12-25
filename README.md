@@ -3,6 +3,17 @@
 # 🚀 Projects  
 ### 🧠 Hands-On Security, SOC & Technical Projects
 
+> 🚨 **WARNING — EDUCATIONAL USE ONLY** 🚨  
+>  
+> <span style="color:red"><strong>This repository is intended strictly for educational, defensive security, and SOC analyst training purposes.</strong></span>  
+>  
+> The techniques, logs, and analysis demonstrated here are provided **solely to understand attacker behavior and improve detection, investigation, and incident response capabilities**.  
+>  
+> <span style="color:red"><strong>The author is NOT responsible for any misuse, illegal activity, or damage caused by applying the information in this repository.</strong></span>  
+>  
+> Use of this material for unauthorized, unethical, or malicious purposes is **strictly prohibited**.
+
+
 ![Hands-On](https://img.shields.io/badge/Experience-Hands--On-orange?style=for-the-badge)
 ![SOC](https://img.shields.io/badge/Focus-SOC%20%26%20Security-blue?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Completed%20%2B%20Ongoing-green?style=for-the-badge)
