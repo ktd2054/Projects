@@ -3,6 +3,16 @@
 # 🛡️ 10 Days – 10 Security Projects  
 ### 🚀 SOC Analyst (Level 1 / Junior) Hands-On Portfolio  
 
+> 🚨 **WARNING — EDUCATIONAL USE ONLY** 🚨  
+>  
+> <span style="color:red"><strong>This repository is intended strictly for educational, defensive security, and SOC analyst training purposes.</strong></span>  
+>  
+> The techniques, logs, and analysis demonstrated here are provided **solely to understand attacker behavior and improve detection, investigation, and incident response capabilities**.  
+>  
+> <span style="color:red"><strong>The author is NOT responsible for any misuse, illegal activity, or damage caused by applying the information in this repository.</strong></span>  
+>  
+> Use of this material for unauthorized, unethical, or malicious purposes is **strictly prohibited**.
+
 ![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Portfolio-blue?style=for-the-badge)
 ![SOC](https://img.shields.io/badge/SOC-Level%201-green?style=for-the-badge)
 ![Projects](https://img.shields.io/badge/Projects-10-orange?style=for-the-badge)
