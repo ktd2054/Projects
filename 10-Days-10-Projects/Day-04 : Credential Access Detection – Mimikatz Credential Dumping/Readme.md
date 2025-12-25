@@ -16,7 +16,7 @@ The case focuses on detecting **Mimikatz-style LSASS access** through Sysmon eve
 
 ## 🔍 What Was Investigated
 - Suspicious process execution
-- Unauthorized access to `lsass.exe`
+- Unauthorized access
 - Indicators of credential dumping
 - Attack timeline reconstruction
 
