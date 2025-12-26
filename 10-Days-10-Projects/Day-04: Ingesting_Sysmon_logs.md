@@ -28,6 +28,7 @@ Well, I've already setup Sysmon, Splunk and it's components on both kali and win
 <img width="1181" height="139" alt="image" src="https://github.com/user-attachments/assets/efc07fb4-65e5-4fe8-9103-88535bf723fd" />
 
 
+
 ### References
 
 - Sysmon. https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
