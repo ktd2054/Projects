@@ -6,7 +6,7 @@ Well, I've already setup Sysmon, Splunk and it's components on both kali and win
 ### Generating Test Events
 
 - first opening notepad application
-- then pinging google.com
+- and second pinging google.com
 - opening other apps and using their features
 
 <img width="929" height="426" alt="image" src="https://github.com/user-attachments/assets/33b1de1b-8e0f-4aee-bf60-28c01f0d4bc2" />
