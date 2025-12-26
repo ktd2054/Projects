@@ -81,6 +81,6 @@ Well, I've already setup Sysmon, Splunk and it's components on both kali and win
 
 - Sysmon. https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
 - How do you want to add data? https://help.splunk.com/en/splunk-enterprise/get-started/get-data-in/9.4/how-to-get-data-into-your-splunk-deployment/how-do-you-want-to-add-data
-- https://help.splunk.com/en/splunk-enterprise/get-started/get-data-in/9.4/how-to-get-data-into-your-splunk-deployment/assign-the-correct-source-types-to-your-data#fe2a63dd_998f_44da_9c20_5f51691b7d30--en__Assign_the_correct_source_types_to_your_data
+- Upload Data, Splunk. https://help.splunk.com/en/splunk-enterprise/get-started/get-data-in/9.4/how-to-get-data-into-your-splunk-deployment/assign-the-correct-source-types-to-your-data#fe2a63dd_998f_44da_9c20_5f51691b7d30--en__Assign_the_correct_source_types_to_your_data
 
 
