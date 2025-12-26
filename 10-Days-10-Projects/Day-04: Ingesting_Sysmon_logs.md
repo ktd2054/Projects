@@ -1,7 +1,7 @@
 # Ingesting Sysmon Logs on Splunk Enterprise
 
 Well, I've already setup Sysmon, Splunk and it's components on both kali and windows VM. Please find the link here:
-- [Link](https://github.com/ktd2054/Projects/blob/main/SOC%20LAB/HOME_LAB/Lab%2002%3A%20Setting_up_SOC_Splunk%20_lab.md))
+- Click here for the lab details ... (https://github.com/ktd2054/Projects/blob/main/SOC%20LAB/HOME_LAB/Lab%2002%3A%20Setting_up_SOC_Splunk%20_lab.md))
 
 ### Generating Test Events
 
