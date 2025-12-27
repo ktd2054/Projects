@@ -50,7 +50,7 @@
 
 --- 
 ### Step -1 : Reading the email 
-
+---
 - Email files contains thousands of lines where headers usually should be in the first 100 lines
 - the following command helps us for log analysis 
 
