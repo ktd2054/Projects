@@ -158,6 +158,13 @@ AFTER DEFANG
 ---
 <img width="594" height="59" alt="image" src="https://github.com/user-attachments/assets/9274f5a5-5f5c-48cb-95b5-859b1cc71794" />
 
+#### Where,
+
+- sed -n ==> reads text line by line and won't print everything automatically
+- '/^$/,$p  ===> starts printing from first blank line until end.
+- | head -n 80 ===> output to first 80 lines
+
+
 #### The HTML findings indicates red flags and they are:
 
 - Email has clickable images acting as hyperlinks
@@ -169,7 +176,7 @@ AFTER DEFANG
 
 ---
 ### Step 4: Final Verdict Report
-
+---
 #### Classification 
 
 - The email is malicious - Phishing.
