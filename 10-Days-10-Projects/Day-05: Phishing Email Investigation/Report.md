@@ -18,6 +18,9 @@
 - Kali Linux
 - Terminal
 - Github
+- grep
+- awk
+- sed
 
 ### To-do 1: Download a sample email 
 
