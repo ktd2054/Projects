@@ -184,8 +184,8 @@ AFTER DEFANG
 #### Evidences 
 
 - SPF authentication shows spf=none
-- From, Reply-to and Return-domains are mismatched
-- Email originated from external server was realyed through Microsoft Infrastructure
+- From, Reply-to and Return-Path domains are mismatched
+- Email originated from external server was relayed through Microsoft Infrastructure
 - HTML has clickable image acting as hyperlink
 - Link redirects to external tracking domain
 - Email uses social engineering technique
@@ -193,7 +193,7 @@ AFTER DEFANG
 #### Recommended Actions
 
 - Block sender email address and associated domains
-- Block identified URls
+- Block identified URLs
 - Search for similar IOCs
 - Notify affected users and organise awareness program
 - Reset user credentials
@@ -207,11 +207,11 @@ AFTER DEFANG
 #### MITRE ATT&CK
 
 - ID: T1566 Phishing  ==> The email is used to get victim to click a link to interact
-- Sub-techniques: T1566.02 Spearphishing Link
+- Sub-techniques: T1566.002 Spearphishing Link
 
 #### Essential Eight
 
-- Phishing with link : MFA, User application hardening
+- MFA, User application hardening
 
 #### NIST CSF 2.0
 
