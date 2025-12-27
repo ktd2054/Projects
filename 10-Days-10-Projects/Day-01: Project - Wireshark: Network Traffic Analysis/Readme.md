@@ -52,13 +52,13 @@ By completing this project, I demonstrate the ability to:
    - IP addresses
    - Domains
    - Ports
-   - File hashes (if visible in traffic)
+   - File hashes
 5. Correlate findings and explain attacker behavior
 6. Document results in a **SOC-style investigation report**
 
 ---
 
-## 🔐 Safety Rules (IMPORTANT)
+## 🔐 Safety Rules
 
 This project strictly follows security best practices:
 
@@ -81,22 +81,6 @@ This project strictly follows security best practices:
   - Traffic Analysis
   - Evidence
   - Conclusion & Recommendations
-
----
-
-## 🚀 Why This Project Matters
-
-This project is designed to be **employer-ready** and showcases my ability to:
-
-**Detect • Analyze • Explain • Report**
-
-
-
----
-
-## 📌 Next Project
-
-- Project 2: Day 2 – Wireshark: Web Attacks (XSS & SQL Injection)
 
 ---
 
