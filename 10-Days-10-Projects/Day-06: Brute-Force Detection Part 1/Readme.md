@@ -33,4 +33,4 @@ Simulate failed login activity and confirm logs are **visible end-to-end** from 
 ---
 
 ⚠️ **Status:** Logs successfully ingested and searchable  
-🔐 *Defensiv*
+🔐 *Defensive*
