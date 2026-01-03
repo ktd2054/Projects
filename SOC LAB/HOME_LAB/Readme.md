@@ -49,7 +49,7 @@ These labs are designed to simulate **real SOC workflows**, not just academic ex
 
 | Lab | Topic |
 |-----|------|
-| Lab 01 | 🚀 [Windows Log Monitoring](<Lab 01:windows_log_monitoring.md>) |
+| Lab 01 | 🚀 [Windows Log Monitoring](Lab%2001:%20windows%20log%20monitoring.md) |
 | Lab 02 | 🎫 [Setting up Splunk Lab](<Lab 02: Setting_up_SOC_Splunk _lab.md>) |
 | Lab 03 | 💬 [Network Analysis using Malwarebazzar and Wireshark](<Lab 03: Network_Analysis_Using_Wireshark and Malwarebazzar.md>) |
 | Lab 04 | ☁️ [Challenge: Tryhackme- Benign](<Lab 04: Splunk_challenge_benign: TryHackMe.md>) |
