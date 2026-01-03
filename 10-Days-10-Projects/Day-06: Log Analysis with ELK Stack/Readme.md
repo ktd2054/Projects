@@ -9,10 +9,10 @@ Designed for **beginner SOC analysts (SOC L1)** to gain hands-on SIEM experience
 ---
 
 ## Tools & Technologies
-- Elasticsearch 7.12.1
-- Logstash 7.12.1
-- Kibana 7.12.1
-- Ubuntu 20.04+
+- Elasticsearch 9.2.3
+- Logstash 9.2.3
+- Kibana 9.2.3
+- Kali linux 
 
 ---
 
