@@ -45,6 +45,16 @@ These labs are designed to simulate **real SOC workflows**, not just academic ex
 
 ---
 
+## 📅 Lab Entries
+
+| Lab | Topic |
+|-----|------|
+| Lab 01 | 🚀 [Windows Log Monitoring](Lab 01: windows_log_monitoring.md) |
+| Lab 02 | 🎫 [Setting up Splunk Lab](Lab 02: Setting_up_SOC_Splunk _lab.md) |
+| Lab 03 | 💬 [Network Analysis using Malwarebazzar and Wireshark](Lab 03: Network_Analysis_Using_Wireshark and Malwarebazzar.md) |
+| Lab 04 | ☁️ [Challenge: Tryhackme- Benign](Lab 04: Splunk_challenge_benign: TryHackMe.md) |
+---
+
 ## 🔍 What This Lab Covers
 
 The projects in this lab focus on **foundational SOC analysis tasks**, including:
@@ -59,7 +69,6 @@ The projects in this lab focus on **foundational SOC analysis tasks**, including
 Each lab strengthens **detection, analysis, and troubleshooting skills** required for a **Junior / SOC Level 1 Analyst** role.
 
 ---
-
 ## 🧠 Learning Philosophy
 
 🟢 Learn by doing  
