@@ -51,6 +51,68 @@ Because of this, simple tools like Telnet or Netcat can act as FTP clients by co
 - ⚠️ Security note: Since everything is sent in cleartext, FTP traffic is easy to intercept and is a common target for attackers.
 
 
+## Simple Mail Transfer Protocol [Port 25]
+
+- Email delivery over the Internet involves four main components:
+
+- MUA (Mail User Agent): The email client used by users (e.g., Outlook, Thunderbird).
+
+- MSA (Mail Submission Agent): Receives outgoing emails from the MUA and checks them.
+
+- MTA (Mail Transfer Agent): Transfers emails between mail servers over the Internet.
+
+- MDA (Mail Delivery Agent): Stores the email so the recipient can retrieve it.
+
+#### 📨 Flow:
+
+- MUA → MSA → MTA → MDA → recipient’s MUA
+
+- To move emails, specific protocols are used:
+
+- SMTP → sending emails (MUA/MSA ↔ MTA)
+
+- POP3 / IMAP → retrieving emails from the server
+
+- SMTP (Simple Mail Transfer Protocol) works in cleartext and listens on port 25 by default. Because it’s unencrypted, tools like Telnet can be used to manually send emails by issuing commands such as HELO, MAIL FROM, RCPT TO, and DATA.
+
+⚠️ Security note: Since SMTP transmits commands and message content in cleartext, traffic can be intercepted, which is why secure variants (like SMTPS or STARTTLS) are commonly used in real-world environments.
+
+
+## Post Office Protocol 3 (Port 110)
+
+
+- POP3 (Post Office Protocol v3) is used by an email client to download emails from a mail server (MDA). The client connects to the POP3 server on port 110, authenticates with a username and password, retrieves messages, and usually deletes them from the server after download.
+
+- Because POP3 works in cleartext, tools like Telnet can be used to interact with it using commands such as:
+
+- USER / PASS → authenticate
+
+- STAT → show number and size of emails
+
+- LIST → list available messages
+
+- RETR → retrieve a message
+
+- ⚠️ Security note: Credentials and email content are sent in cleartext, making POP3 vulnerable to interception.
+
+- 📌 Limitation: POP3 is not ideal for using multiple devices, as emails are typically removed after download. For mailbox synchronization across devices, IMAP is preferred.
+
+## Internet Message Access Protocol (port 143)
+
+- IMAP (Internet Message Access Protocol) allows emails to stay synchronized across multiple devices. Actions like reading, deleting, or flagging messages are stored on the mail server (MDA) and reflected on all connected clients.
+
+- IMAP typically listens on port 143 and requires authentication (e.g., LOGIN username password). Unlike POP3, IMAP:
+
+- Keeps emails on the server
+
+- Supports folders, flags, and read/unread states
+
+- Works well with multiple devices and clients
+
+- IMAP commands are tagged (e.g., c1, c2) so the client can match server responses. Common actions include listing mailboxes and examining the inbox.
+
+- ⚠️ Security note: Standard IMAP sends credentials and commands in cleartext, making it vulnerable to interception. Secure variants like IMAPS (port 993) or STARTTLS are used in real-world environments to protect credentials and data.
+
 
 
 
