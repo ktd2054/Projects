@@ -1,4 +1,4 @@
-# 🔐 10 Days – 10 SOC Projects 🚀
+# 🔐 5 Days – 5 SOC Projects 🚀
 
 A hands-on cybersecurity challenge focused on **real-world SOC L1 skills**, built through practical investigations and defensive security workflows.
 
