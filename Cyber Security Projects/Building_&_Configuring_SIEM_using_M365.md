@@ -1,140 +1,200 @@
-# Building & Configuring SIEM using M365.md
+# 🛡️ Building & Configuring a SIEM using Microsoft Sentinel (Azure + M365)
 
-- creating and signing up an Azure free account
-- updating to pay as you go model
-- locating default subscription
-  
-<img width="1729" height="338" alt="image" src="https://github.com/user-attachments/assets/9b102f5a-5185-4ce8-b16c-aedfc5773615" />
+This project demonstrates a **hands-on SOC lab** where a Windows VM is deployed in Azure, exposed to the internet, and monitored using **Microsoft Sentinel**.  
+The goal is to ingest real Windows security logs and analyze them using **KQL**, simulating a real-world SIEM environment.
 
-- searching resource groups and creating a resource group under the default subscription
+---
 
-<img width="866" height="416" alt="image" src="https://github.com/user-attachments/assets/1bb1198b-a1b6-40be-ad70-be4fcaa8bc07" />
+## ☁️ 1. Azure Account Setup
 
+### 1.1 Create an Azure Free Account
+- Sign up for an **Azure Free Account**
+- Upgrade the subscription to **Pay-As-You-Go** (required for Sentinel & Log Analytics)
 
-# Create VM and exposing it to internet
+### 1.2 Verify Default Subscription
+- Navigate to **Subscriptions**
+- Confirm **Default Subscription** is active
 
-- Basics
+![Default Subscription](https://github.com/user-attachments/assets/9b102f5a-5185-4ce8-b16c-aedfc5773615)
 
-<img width="956" height="667" alt="image" src="https://github.com/user-attachments/assets/0a166920-4577-4537-ae7f-4e9e0c8a1497" />
+---
 
-- Disks : leave default
+## 📦 2. Resource Group Creation
 
-- Networking -> go to Configure network security group -> click create new
+A **Resource Group** acts as a logical container for related Azure resources.
 
-  #### It is a Virtual firewall which helps to control traffic.
+### Steps
+- Search **Resource Groups**
+- Click **Create**
+- Select **Default Subscription**
+- Provide:
+  - Resource Group Name (e.g., `SOC-Lab-RG`)
+  - Region (nearest location)
+- Click **Review + Create → Create**
 
-- Under Inbound rules -> click Add an inbound rule
+![Resource Group Creation](https://github.com/user-attachments/assets/1bb1198b-a1b6-40be-ad70-be4fcaa8bc07)
 
-<img width="505" height="807" alt="image" src="https://github.com/user-attachments/assets/99cdc4d0-da15-406e-995d-e1ea9697fe20" />
+---
 
-- click review and create
-- after successful validation pass -> click create
+## 💻 3. Virtual Machine Deployment (Exposed to Internet)
 
-<img width="1368" height="282" alt="image" src="https://github.com/user-attachments/assets/455c3f99-79b3-4df6-82ee-6fa1d0338a15" />
+This VM generates logs that will be ingested into the SIEM.
 
-- let's copy public IP address of VM and use RDP for connection
+### 3.1 VM Basics
+- Go to **Virtual Machines → Create**
+- Configure:
+  - Subscription: Default
+  - Resource Group: SOC-Lab-RG
+  - Image: Windows 10 / Windows Server
+  - Authentication: Username & Password
+  - Allow **RDP (3389)**
 
-<img width="430" height="270" alt="image" src="https://github.com/user-attachments/assets/e3a8a947-ae39-4eff-88b0-bee63cb39fa6" />
+![VM Basics](https://github.com/user-attachments/assets/0a166920-4577-4537-ae7f-4e9e0c8a1497)
 
+### 3.2 Disks
+- Leave all settings as **default**
 
-## Connection via RDP
+### 3.3 Networking & NSG Configuration 🔥
 
-<img width="1013" height="679" alt="image" src="https://github.com/user-attachments/assets/f34b4787-28ed-443c-923c-731f1a6803da" />
+A **Network Security Group (NSG)** works as a **virtual firewall**.
 
-- disabling windows firewall
+- Under **Networking → Configure Network Security Group**
+- Click **Create New NSG**
+- Add **Inbound Rule**:
+  - Source: Any
+  - Destination: Any
+  - Service: RDP
+  - Action: Allow
+  - Priority: 1000
 
-- win + R -> search wf.msc
+![NSG Rule](https://github.com/user-attachments/assets/99cdc4d0-da15-406e-995d-e1ea9697fe20)
 
-<img width="1063" height="422" alt="image" src="https://github.com/user-attachments/assets/6509688f-36fe-4972-87cb-ea792f0de4eb" />
+- Click **Review + Create → Create**
 
-- click windows defender firewall properties
+![VM Validation](https://github.com/user-attachments/assets/455c3f99-79b3-4df6-82ee-6fa1d0338a15)
 
-- domain profile off
+---
 
-<img width="402" height="290" alt="image" src="https://github.com/user-attachments/assets/caf2a323-6306-418e-8742-517a87471622" />
+## 🔑 4. Connecting to the VM via RDP
 
-- and so on for private and public profile
-- click apply and ok
-- let's wait until the created machine hits traffic
+### Steps
+- Copy the **Public IP Address**
+- Open **Remote Desktop Connection**
+- Connect using VM credentials
 
-# Setting up SIEM
+![VM Public IP](https://github.com/user-attachments/assets/e3a8a947-ae39-4eff-88b0-bee63cb39fa6)
 
-- before setting up SIEM; we need a workspace for log ingestions
-- go to search -> log analysis workspace -> click create -> fill the details
-- click review+create
+![RDP Connection](https://github.com/user-attachments/assets/f34b4787-28ed-443c-923c-731f1a6803da)
 
-<img width="861" height="736" alt="image" src="https://github.com/user-attachments/assets/bac1ae0d-a649-48c6-aeb3-0cb34c141bc6" />
+---
 
-- lets setup SIEM using sentinal
+## 🚫 5. Disable Windows Firewall (Lab Only)
 
-- search -> sentinal -> click
+⚠️ **For learning purposes only — never do this in production**
 
-- click create and select the previous created SOC-Lab workspace
+### Steps
+- Press **Win + R → wf.msc**
+- Open **Windows Defender Firewall Properties**
 
-<img width="1196" height="404" alt="image" src="https://github.com/user-attachments/assets/3b4a551a-85e4-48e0-8ed4-258b70267260" />
+![Firewall Console](https://github.com/user-attachments/assets/6509688f-36fe-4972-87cb-ea792f0de4eb)
 
-- SIEM created
+- Turn **Firewall OFF** for:
+  - Domain
+  - Private
+  - Public
 
-# Ingesting logs from previous web VM
+![Firewall Disabled](https://github.com/user-attachments/assets/caf2a323-6306-418e-8742-517a87471622)
 
-- on sidebar under content management -> go to content hub
+This allows the VM to attract unsolicited traffic 🌐
 
-<img width="303" height="702" alt="image" src="https://github.com/user-attachments/assets/c7df2109-3609-4ecc-98ba-26150ad94026" />
+---
 
-- search secruity events and instll
+## 📊 6. Log Analytics Workspace (Log Ingestion Layer)
 
-<img width="743" height="752" alt="image" src="https://github.com/user-attachments/assets/9b3ea169-e124-483a-9ffd-3b7a152abac0" />
+Microsoft Sentinel requires a **Log Analytics Workspace**.
 
-- go to RDP windows and search event viewer
+### Steps
+- Search **Log Analytics Workspace**
+- Click **Create**
+- Provide:
+  - Workspace Name (e.g., `SOC-Lab-Workspace`)
+  - Resource Group: SOC-Lab-RG
+  - Region: Same as VM
+- Click **Review + Create → Create**
 
-- windwos logs-> security events
+![Log Analytics Workspace](https://github.com/user-attachments/assets/bac1ae0d-a649-48c6-aeb3-0cb34c141bc6)
 
-- ingesting that logs to our vm
+---
 
-<img width="1634" height="669" alt="image" src="https://github.com/user-attachments/assets/0eb0d59c-f347-4839-8796-712dd9e28606" />
+## 🧠 7. Microsoft Sentinel (SIEM Setup)
 
+### Steps
+- Search **Microsoft Sentinel**
+- Click **Create**
+- Select the created **Log Analytics Workspace**
+- Click **Add**
 
-- click on manage after successful installation of windwos security events
+![Sentinel Workspace](https://github.com/user-attachments/assets/3b4a551a-85e4-48e0-8ed4-258b70267260)
 
-<img width="994" height="809" alt="image" src="https://github.com/user-attachments/assets/04f05da8-b01d-4cca-9688-a577dc22bf3e" />
+---
 
-- we will choose Windows security events via AMA
+## 📥 8. Ingesting Windows Security Logs
 
-  <img width="1046" height="677" alt="image" src="https://github.com/user-attachments/assets/b69a82ee-ebfd-4559-8b35-49d43e737710" />
+### 8.1 Install Windows Security Events
+- Go to **Sentinel → Content Hub**
+- Search **Windows Security Events**
+- Click **Install**
 
+![Content Hub](https://github.com/user-attachments/assets/c7df2109-3609-4ecc-98ba-26150ad94026)
 
-- click on open connector page
+![Install](https://github.com/user-attachments/assets/9b3ea169-e124-483a-9ffd-3b7a152abac0)
 
-<img width="1254" height="902" alt="image" src="https://github.com/user-attachments/assets/948576c6-7189-41db-ad40-bd387da5b2ad" />
+---
 
-- under configuration -> click create data collection rule 
+### 8.2 Verify Logs on VM
+- Inside VM:
+  - Open **Event Viewer**
+  - Navigate to **Windows Logs → Security**
 
-<img width="969" height="648" alt="image" src="https://github.com/user-attachments/assets/47dce3ba-155f-4b10-9c59-e5d79785e875" />
+![Event Viewer](https://github.com/user-attachments/assets/0eb0d59c-f347-4839-8796-712dd9e28606)
 
-- creating rule
+---
 
-<img width="742" height="395" alt="image" src="https://github.com/user-attachments/assets/f3a2bdf1-058b-4464-ae30-22682836d153" />
+### 8.3 Configure Data Collection Rule (AMA)
 
+- Sentinel → **Manage**
+- Choose **Windows Security Events via AMA**
+- Open **Connector Page**
+- Click **Create Data Collection Rule**
+- Select:
+  - Subscription
+  - Resource Group
+  - VM
+  - All Security Events
+- Click **Review + Create**
 
-- select subscription 
+---
 
-<img width="828" height="340" alt="image" src="https://github.com/user-attachments/assets/8ea402cd-f091-46ee-addc-8e74cb10d1d9" />
-
-- click review+create and after validation click create 
-
-
+### 8.4 Verify Agent Installation
+- VM → **Extensions + Applications**
+- Confirm **Azure Monitor Agent** is installed ✅
 - verify data ingestion -> go to VM -> settings -> extensions+applications
 
 
 <img width="1106" height="248" alt="image" src="https://github.com/user-attachments/assets/ae01ea58-c43c-421e-baab-3c1572efcaff" />
 
+---
 
-# Searching the windows logs using sentinel
+## 🔍 9. Querying Logs in Microsoft Sentinel
 
-- go to sentinel -> logs 
+### Steps
+- Sentinel → **Logs**
+- Switch to **KQL Mode**
+- Run:
 
-
-<img width="1259" height="360" alt="image" src="https://github.com/user-attachments/assets/ae07fd07-20db-4588-b27b-494b8fd7d5d6" />
+```kql
+SecurityEvent
+```
 
 - select KQl mode and search SecurityEvent
 
@@ -145,4 +205,3 @@
 -  search an Security Event 
 
 <img width="674" height="559" alt="image" src="https://github.com/user-attachments/assets/b12720b4-0781-49de-9988-6a4115c0b29e" />
-
