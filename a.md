@@ -183,13 +183,6 @@ Microsoft Sentinel requires a **Log Analytics Workspace**.
 
 <img width="1106" height="248" alt="image" src="https://github.com/user-attachments/assets/ae01ea58-c43c-421e-baab-3c1572efcaff" />
 
-
-# Searching the windows logs using sentinel
-
-- go to sentinel -> logs 
-
-<img width="1259" height="360" alt="image" src="https://github.com/user-attachments/assets/ae07fd07-20db-4588-b27b-494b8fd7d5d6" />
-
 ---
 
 ## 🔍 9. Querying Logs in Microsoft Sentinel
@@ -211,4 +204,4 @@ SecurityEvent
 
 -  search an Security Event 
 
-<img width="674" height="559" alt="image" src="https://github.com/user-attachments/assets/b12720b4-0781-49de-9988-6a4115c0b29e" /
+<img width="674" height="559" alt="image" src="https://github.com/user-attachments/assets/b12720b4-0781-49de-9988-6a4115c0b29e" />
