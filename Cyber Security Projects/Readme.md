@@ -36,10 +36,9 @@ Instead of theory-only learning, this lab emphasizes **doing the work a SOC anal
 
 ## 🏠 HOME_LAB Overview
 
-The **HOME_LAB** directory contains **hands-on cybersecurity projects built inside my virtual lab environment**.
+The **Cyber Security Projects** directory contains **hands-on cybersecurity projects built inside my virtual lab environment**.
 
-- 📁 Projects are labeled starting from **Lab 01, Lab 02, Lab 03**, etc.
-- 📝 Additional files include **notes and concepts learned** while working with SIEM and Splunk
+- 📝 Additional files includes working with SIEM and Splunk
 - 🔁 Each lab builds progressively on previous knowledge
 
 These labs are designed to simulate **real SOC workflows**, not just academic exercises.
