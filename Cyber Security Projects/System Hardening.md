@@ -4,7 +4,6 @@
 
 - Os: Kali Linux
 - Tool: Lynis - a security audit tool for kali/linux systems.
-- 
 
 ### Steps for Kali linux hardening
 
