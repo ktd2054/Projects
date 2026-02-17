@@ -26,3 +26,13 @@ https://askubuntu.com/questions/591855/how-can-i-fix-e-sub-process-usr-bin-dpkg-
 - fixed the problem.
   
 ---
+
+## Installing lynis 
+
+<img width="486" height="183" alt="image" src="https://github.com/user-attachments/assets/009f2509-7987-480f-861d-da0ff19641cd" />
+
+## running lynis for audit 
+
+<img width="795" height="359" alt="image" src="https://github.com/user-attachments/assets/394bce84-c4ae-413c-9d0e-ec6bbdad61a6" />
+
+ - after running lynis for auditing, it will provide detailed description of things to perform hardening in the sytem.
