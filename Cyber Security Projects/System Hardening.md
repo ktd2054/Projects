@@ -1,104 +1,157 @@
-# System Hardening
 
-## Auditing Windows
-
-- At first, search compliance toolkit microsoft using browser and click on the first link from microsoft.
-- To download the appropriate toolkit we need to have he information about the os that we are using
-- In my case it is windows server 2022, now lets download few things and i will explain about this first step.
-
-<img width="1007" height="257" alt="image" src="https://github.com/user-attachments/assets/633feb51-2338-4aca-a2c5-3f196505cc12" />
-
-- These downloaded files are tools that allows admins to download, analyse, test, edit and store microsoft-recommended security configuration baselines for windows and other microsoft products, while comparing them against other security configurations.
-
-### Running Policy analyser toolkit
-
-<img width="909" height="318" alt="image" src="https://github.com/user-attachments/assets/672cfdac-6ca3-41ef-b0f9-330e3707e6ac" />
-
-- run as admninstrator
-
-<img width="609" height="520" alt="image" src="https://github.com/user-attachments/assets/5878dbbf-dc8f-4986-b915-e02d9347fd6c" />
-
-- click add, go to file and select add files from GPOs
-
-<img width="728" height="358" alt="image" src="https://github.com/user-attachments/assets/fc36f9f3-fea4-44eb-9827-ccdfb343afd6" />
-
-- the other file we downloaded before contains GPO folder
-
-<img width="931" height="471" alt="image" src="https://github.com/user-attachments/assets/6969f9e8-adcd-4bb1-a0ed-fa9b9d4e46bc" />
-
-- select that GPOs folder and click import then name the file name
-
-<img width="500" height="270" alt="image" src="https://github.com/user-attachments/assets/7ff511fa-d29a-49ea-b8c3-c1e9ad276da5" />
-
-- click on compare to effective state which compares to our recent policy.
-
-<img width="975" height="436" alt="image" src="https://github.com/user-attachments/assets/8412f152-9b09-4cdd-a7c5-0b944e6000b7" />
-
-- on effective state yellow color means the difference between current security state and effective state, as we clicked on each policy we can see everything in detail.
-
-<img width="1183" height="352" alt="image" src="https://github.com/user-attachments/assets/942a7e4c-f37e-4fcf-b316-d1a1803fe1f9" />
-
-
-### Lets apply and push some suggested policies 
-
-- Now I will push that GGPo through domain controller.
-
-- search for group policy management tool in domain
-
-<img width="455" height="125" alt="image" src="https://github.com/user-attachments/assets/08e7866b-3caa-4d28-87e1-155efe4a48db" />
-
-- creating a GPO named Logging Server and Workstation Policies
-- right click and edit, click policies folder on sidebar
-- go to windows settings -> security settings -> advanced audit policy configuration -> audit policies
-
-- now lets perform one of the policies listed
-
-<img width="959" height="98" alt="image" src="https://github.com/user-attachments/assets/71b4b881-04d5-4e69-b239-bef7bc439edb" />
-
-- the top audit policy shown in above image states the credintinal validation is a conflit
-
-- to push that policy we need to edit Credential validation under Account logon policy 
-
-<img width="311" height="138" alt="image" src="https://github.com/user-attachments/assets/1c4672c8-91b6-437c-a4c7-e8f9cb457bc4" />
-
-<img width="1229" height="623" alt="image" src="https://github.com/user-attachments/assets/2797cb2d-5428-4b81-8e26-12e722f4edf2" />
-
-
+<img width="737" height="206" alt="image" src="https://github.com/user-attachments/assets/177e5214-fcd4-464f-bcb5-b9579ce34a6e" />
 
 ---
-## Linux Hardening/Auditing
 
-- Os: Kali Linux
-- Tool: Lynis - a security audit tool for kali/linux systems.
+# 🏰 Part 2 – Active Directory Auditing with PingCastle
 
-### Steps for Kali linux hardening
+PingCastle identifies:
 
-- update & upgrade the system
+- Weak authentication
+- Legacy protocols
+- Stale objects
+- Privilege issues
+
+<img width="1700" height="544" alt="image" src="https://github.com/user-attachments/assets/f9a624dc-0c0e-42b9-8c36-f34af77e99f9" />
+
+Run health check.
+
+<img width="954" height="606" alt="image" src="https://github.com/user-attachments/assets/5593052a-c7bd-4d3b-9cfc-d7f3a46fc98f" />
+
+Open report.
+
+<img width="1342" height="783" alt="image" src="https://github.com/user-attachments/assets/39f7f621-8601-473e-b42a-fbc7dfabcd55" />
+
+Domain risk: **50/100**
+
+<img width="982" height="566" alt="image" src="https://github.com/user-attachments/assets/315521d5-b318-42b7-8d0c-5f7953dfb26d" />
+
+Findings include potential account takeover and sniffing.
+
+<img width="1255" height="243" alt="image" src="https://github.com/user-attachments/assets/fc29e77b-e8cd-4f6e-be84-f7725c8a324b" />
+
+Reviewing stale objects:
+
+<img width="1352" height="694" alt="image" src="https://github.com/user-attachments/assets/26aacd9e-dbe9-41a6-bfdd-9c3cc311043e" />
 
 ---
-##### ** I got an error **
+
+## NTLM Explanation
+
+**NTLM (NT LAN Manager)** is an old Windows authentication protocol.
+
+Problems:
+
+- Vulnerable to relay attacks  
+- Weak cryptography  
+- Enables credential harvesting  
+
+Modern environments should use **Kerberos**, which provides:
+
+- Mutual authentication  
+- Encrypted tickets  
+- Replay protection  
+
+Disabling NTLM significantly reduces lateral movement risk.
+
+---
+
+## Remediating NTLM
+
+Create GPO: `Disable NTLM`
+
+<img width="1082" height="482" alt="image" src="https://github.com/user-attachments/assets/dd03102a-3d8e-40c3-8ad6-21d7f03390b2" />
+
+<img width="1224" height="693" alt="image" src="https://github.com/user-attachments/assets/47f4f21f-768e-47f3-939e-f7ef0bed73d9" />
+
+Navigate:
+
+Policies → Security Settings → Local Policies → Security Options
+
+<img width="576" height="88" alt="image" src="https://github.com/user-attachments/assets/1a455ba6-1a47-43ca-9353-85a85f841319" />
+
+Configure LAN Manager authentication.
+
+<img width="446" height="322" alt="image" src="https://github.com/user-attachments/assets/d58de24c-cc25-4fb9-acc5-843257ef9671" />
+
+Push policy.
+
+<img width="433" height="200" alt="image" src="https://github.com/user-attachments/assets/5c73c336-760b-4ad8-81b8-2b63164d351d" />
+
+<img width="1531" height="318" alt="image" src="https://github.com/user-attachments/assets/4de4f410-3863-446d-a083-e0dfb38e2bd8" />
+
+Re-run PingCastle.
+
+<img width="1463" height="479" alt="image" src="https://github.com/user-attachments/assets/f05f1dd2-c210-47b4-a6cd-0eaa37b11d17" />
+
+NTLM-related risks reduced.
+
+---
+
+# 🐧 Part 3 – Linux Hardening with Lynis
+
+**OS:** Kali Linux  
+**Tool:** Lynis  
+
+---
+
+## System Update
 
 <img width="856" height="164" alt="image" src="https://github.com/user-attachments/assets/95fc85f0-b201-4e0f-a0f5-5ce2361e7349" />
 
-##### How to fix it?
+Encountered dpkg error.
+
+Fix followed from:
 
 https://askubuntu.com/questions/591855/how-can-i-fix-e-sub-process-usr-bin-dpkg-returned-an-error-code-2
 
-- After careful review of the link above, I got that I have to configure dpkg in root mode.
-- To configure that i have to delete the file shown in the image above and create the file again to configure dpkg settings.
-  
+Reconfigured dpkg:
+
 <img width="1007" height="722" alt="image" src="https://github.com/user-attachments/assets/9041be88-7593-46a9-ad12-475fa2ea66ce" />
 
-- fixed the problem.
-  
+Issue resolved.
+
 ---
 
-## Installing lynis 
+## Installing Lynis
 
 <img width="486" height="183" alt="image" src="https://github.com/user-attachments/assets/009f2509-7987-480f-861d-da0ff19641cd" />
 
-## running lynis for audit 
+---
+
+## Running Lynis Audit
 
 <img width="795" height="359" alt="image" src="https://github.com/user-attachments/assets/394bce84-c4ae-413c-9d0e-ec6bbdad61a6" />
 
- - after running lynis for auditing, it will provide detailed description of settings to perform hardening in the sytem.
+Lynis provides:
+
+- Security warnings  
+- Hardening suggestions  
+- Kernel checks  
+- File permission issues  
+- Service exposure  
+
+These recommendations guide further Linux hardening.
+
+---
+
+# ✅ Conclusion
+
+This lab demonstrates:
+
+- Windows baseline auditing  
+- GPO-based hardening  
+- Active Directory risk assessment  
+- NTLM removal  
+- Linux security auditing  
+
+These are foundational skills for:
+
+- IT Support  
+- Infrastructure Administration  
+- SOC Level 1  
+- Blue Team operations  
+
+This project reflects real-world enterprise security workflows.
+
+---
