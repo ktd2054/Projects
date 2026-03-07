@@ -1,4 +1,5 @@
-# TRYHACKME: PHISHING UNFOLDING LAB [Repo Link: https://github.com/ktd2054/Projects/tree/main/SOC%20LAB/TRYHACKME%20PHISHING%20SIMULATOR]
+# TRYHACKME: PHISHING UNFOLDING LAB 
+[Repo Link: https://github.com/ktd2054/Projects/tree/main/SOC%20LAB/TRYHACKME%20PHISHING%20SIMULATOR]
 
 The TRYHACKME PHISHING SIMULATOR directory contains completed SOC alert investigations generated from TryHackMe’s phishing simulation environment. 
 
